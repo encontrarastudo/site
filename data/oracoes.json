@@ -1,0 +1,407 @@
+[
+  {
+    "slug": "sinal-da-cruz",
+    "nome": "Sinal da Cruz",
+    "cat": "Dia a dia",
+    "img": "crucifixo",
+    "sub": "O gesto que abre e fecha toda oração do cristão.",
+    "intro": "O <strong>Sinal da Cruz</strong> é a primeira e mais simples oração do cristão. Com ele professamos, em poucas palavras, o mistério central da fé: um só Deus em três Pessoas &mdash; Pai, Filho e Espírito Santo.",
+    "texto": "Em nome do Pai, e do Filho, e do Espírito Santo. Amém.<span class=\"peca\">Forma mais antiga, traçando a cruz na testa, na boca e no peito:</span>Pelo sinal da Santa Cruz, livrai-nos, Deus, nosso Senhor, dos nossos inimigos.<br>Em nome do Pai, e do Filho, e do Espírito Santo. Amém.",
+    "sobre": "<p>Faça o Sinal da Cruz ao começar e ao terminar de rezar, ao acordar e ao dormir. É uma profissão de fé e, ao mesmo tempo, um pedido de bênção e proteção.</p>",
+    "related": [
+      "oracao-da-manha",
+      "vinde-espirito-santo",
+      "oracao-santo-anjo"
+    ]
+  },
+  {
+    "slug": "oracao-da-manha",
+    "nome": "Oração da Manhã (Oferecimento do Dia)",
+    "cat": "Dia a dia",
+    "img": "oracao-manha",
+    "sub": "Entregar a Deus, logo ao acordar, tudo o que o dia trará.",
+    "intro": "A <strong>Oração da Manhã</strong>, também chamada Oferecimento do Dia, é uma forma de começar o dia colocando nas mãos de Deus as orações, os trabalhos, as alegrias e os sofrimentos que virão. É a oração clássica do Apostolado da Oração.",
+    "texto": "Ó meu Deus, eu vos ofereço todas as minhas orações,<br>obras, alegrias e sofrimentos deste dia,<br>em união com o Sagrado Coração de Jesus,<br>que continua a oferecer-se a vós no Santíssimo Sacramento,<br>pela salvação do mundo.<br>Eu vo-los ofereço pelas intenções<br>pelas quais o mesmo Coração de Jesus se oferece.<br>Dai-me, ó Senhor, a graça de viver este dia<br>em vossa presença e segundo a vossa vontade. Amém.",
+    "sobre": "<p>Reze-a assim que acordar, antes de começar as tarefas. Oferecer o dia transforma o trabalho comum &mdash; e até as contrariedades &mdash; em oração.</p>",
+    "related": [
+      "oracao-da-noite",
+      "sinal-da-cruz",
+      "consagracao-nossa-senhora"
+    ]
+  },
+  {
+    "slug": "oracao-da-noite",
+    "nome": "Oração da Noite",
+    "cat": "Dia a dia",
+    "img": "oracao-noite",
+    "sub": "Agradecer o dia e confiar o sono a Deus.",
+    "intro": "A <strong>Oração da Noite</strong> encerra o dia em agradecimento e confiança. Antes de dormir, o cristão examina a consciência, pede perdão pelas faltas e entrega o descanso à proteção de Deus.",
+    "texto": "Senhor, ao terminar este dia, venho agradecer-vos<br>por tudo o que recebi de vossas mãos.<br>Perdoai-me o mal que fiz e o bem que deixei de fazer.<br>Abençoai a minha família e todos a quem amo.<br>Guardai-me esta noite em vossa paz<br>e fazei que eu descanse sob a vossa proteção.<br>Em vossas mãos, Senhor, entrego o meu espírito. Amém.",
+    "sobre": "<p>Antes de dormir, faça um breve exame do dia: agradeça o bem, reconheça as faltas e proponha recomeçar amanhã. Encerre com um Pai-Nosso e uma Ave-Maria.</p>",
+    "related": [
+      "oracao-da-manha",
+      "ato-de-contricao",
+      "oracao-santo-anjo"
+    ]
+  },
+  {
+    "slug": "ato-de-contricao",
+    "nome": "Ato de Contrição",
+    "cat": "Dia a dia",
+    "img": "crucifixo",
+    "sub": "O arrependimento sincero que prepara a confissão.",
+    "intro": "O <strong>Ato de Contrição</strong> é a oração do arrependimento. Reconhecemos os nossos pecados, pedimos perdão a Deus e firmamos o propósito de não mais pecar. É rezado todos os dias e, de modo especial, no sacramento da Confissão.",
+    "texto": "Meu Deus, eu me arrependo de todo o coração<br>de todos os meus pecados e os detesto,<br>porque, pecando, não só mereci as penas por vós estabelecidas,<br>mas principalmente porque vos ofendi,<br>a vós, sumo bem e digno de ser amado sobre todas as coisas.<br>Proponho firmemente, com o auxílio da vossa graça,<br>não mais pecar e fugir das ocasiões próximas de pecado.<br>Senhor, tende misericórdia de mim. Amém.",
+    "sobre": "<p>O verdadeiro arrependimento nasce do amor a Deus, não apenas do medo do castigo. Reze o Ato de Contrição ao fim do dia e sempre antes de se confessar.</p>",
+    "related": [
+      "oracao-da-noite",
+      "alma-de-cristo",
+      "oracao-poder-sangue-jesus"
+    ]
+  },
+  {
+    "slug": "oracao-sao-francisco",
+    "nome": "Oração de São Francisco (pela Paz)",
+    "cat": "Dia a dia",
+    "img": "sao-francisco",
+    "sub": "&ldquo;Senhor, fazei de mim um instrumento de vossa paz.&rdquo;",
+    "intro": "A <strong>Oração de São Francisco</strong>, também chamada Oração pela Paz, é um dos textos espirituais mais amados do mundo. Atribuída tradicionalmente ao espírito de São Francisco de Assis, inspira a viver o Evangelho fazendo-se dom para os outros.",
+    "texto": "Senhor, fazei de mim um instrumento de vossa paz.<br>Onde houver ódio, que eu leve o amor;<br>onde houver ofensa, que eu leve o perdão;<br>onde houver discórdia, que eu leve a união;<br>onde houver dúvida, que eu leve a fé;<br>onde houver erro, que eu leve a verdade;<br>onde houver desespero, que eu leve a esperança;<br>onde houver tristeza, que eu leve a alegria;<br>onde houver trevas, que eu leve a luz.<br>Ó Mestre, fazei que eu procure mais<br>consolar, que ser consolado;<br>compreender, que ser compreendido;<br>amar, que ser amado.<br>Pois é dando que se recebe;<br>é perdoando que se é perdoado;<br>e é morrendo que se vive para a vida eterna. Amém.",
+    "sobre": "<p>Reze esta oração quando precisar reconciliar-se, servir ou recomeçar. Ela ensina que a paz nasce quando deixamos de nos buscar a nós mesmos. São Francisco de Assis é festejado em <strong>4 de outubro</strong>.</p>",
+    "related": [
+      "oracao-da-manha",
+      "oracao-santo-anjo",
+      "magnificat"
+    ]
+  },
+  {
+    "slug": "vinde-espirito-santo",
+    "nome": "Vinde, Espírito Santo",
+    "cat": "A Jesus e ao Espírito Santo",
+    "img": "espirito-santo",
+    "sub": "A oração que invoca a luz e o fogo do Espírito.",
+    "intro": "A oração <strong>Vinde, Espírito Santo</strong> pede a vinda do Espírito sobre nós, para que renove o nosso coração e nos conduza à verdade. É rezada no início de todo trabalho importante, de reuniões, estudos e decisões.",
+    "texto": "Vinde, Espírito Santo,<br>enchei os corações dos vossos fiéis<br>e acendei neles o fogo do vosso amor.<br>Enviai o vosso Espírito e tudo será criado,<br>e renovareis a face da terra.<br><span class=\"peca\">Oremos:</span>Ó Deus, que instruístes os corações dos vossos fiéis<br>com a luz do Espírito Santo,<br>fazei que apreciemos retamente todas as coisas<br>segundo o mesmo Espírito<br>e gozemos sempre da sua consolação.<br>Por Cristo, Senhor nosso. Amém.",
+    "sobre": "<p>Reze antes de estudar, decidir ou servir. O Espírito Santo é o grande mestre interior: Ele ilumina a mente e aquece o coração.</p>",
+    "related": [
+      "oracao-cura-libertacao",
+      "magnificat",
+      "sinal-da-cruz"
+    ]
+  },
+  {
+    "slug": "alma-de-cristo",
+    "nome": "Alma de Cristo (Anima Christi)",
+    "cat": "A Jesus e ao Espírito Santo",
+    "img": "eucaristia-altar",
+    "sub": "A oração de união com Cristo, rezada após a comunhão.",
+    "intro": "A <strong>Alma de Cristo</strong> (em latim, <em>Anima Christi</em>) é uma antiga oração de intimidade com Jesus, especialmente rezada como ação de graças após a comunhão. São Inácio de Loyola a recomendava nos seus Exercícios Espirituais.",
+    "texto": "Alma de Cristo, santificai-me.<br>Corpo de Cristo, salvai-me.<br>Sangue de Cristo, inebriai-me.<br>Água do lado de Cristo, lavai-me.<br>Paixão de Cristo, confortai-me.<br>Ó bom Jesus, ouvi-me.<br>Dentro das vossas chagas, escondei-me.<br>Não permitais que eu me separe de vós.<br>Do espírito maligno, defendei-me.<br>Na hora da minha morte, chamai-me.<br>E mandai-me ir para vós,<br>para que, com os vossos santos, vos louve<br>por todos os séculos dos séculos. Amém.",
+    "sobre": "<p>Reze a Alma de Cristo depois de comungar, em adoração ao Santíssimo ou sempre que desejar unir-se mais profundamente a Jesus.</p>",
+    "related": [
+      "oracao-poder-sangue-jesus",
+      "ato-de-contricao",
+      "vinde-espirito-santo"
+    ]
+  },
+  {
+    "slug": "oracao-poder-sangue-jesus",
+    "nome": "Oração pelo Poder do Sangue de Jesus",
+    "cat": "A Jesus e ao Espírito Santo",
+    "img": "sangue-calice",
+    "sub": "Invocar a força redentora do Sangue derramado por nós.",
+    "intro": "A <strong>Oração pelo Poder do Sangue de Jesus</strong> invoca a força do Sangue que Cristo derramou na cruz para a nossa salvação. É uma oração de confiança, proteção e cura, muito rezada na espiritualidade católica.",
+    "texto": "Senhor Jesus Cristo,<br>pelo vosso Preciosíssimo Sangue derramado na cruz,<br>eu vos peço que me cubrais e me protejais.<br>Que o vosso Sangue purifique o meu coração,<br>cure as minhas feridas e me liberte de todo mal.<br>Cobri com o vosso Sangue a minha família,<br>o meu lar, o meu trabalho e os meus caminhos.<br>Em vós eu confio, pois sois o meu Redentor.<br>A vós a glória, agora e para sempre. Amém.",
+    "sobre": "<p>Reze com fé e confiança, lembrando que toda a força desta oração vem de Cristo, que nos redimiu na cruz. Devoção ligada ao Preciosíssimo Sangue, celebrado em <strong>julho</strong>.</p>",
+    "related": [
+      "alma-de-cristo",
+      "oracao-cura-libertacao",
+      "oracao-sao-miguel-arcanjo"
+    ]
+  },
+  {
+    "slug": "oracao-cura-libertacao",
+    "nome": "Oração de Cura e Libertação",
+    "cat": "A Jesus e ao Espírito Santo",
+    "img": "cura-libertacao",
+    "sub": "Entregar a Jesus as feridas do corpo, da alma e da história.",
+    "intro": "A <strong>Oração de Cura e Libertação</strong> apresenta a Jesus, único Salvador, as feridas que carregamos &mdash; do corpo, da alma e da história &mdash; pedindo cura e liberdade. A Igreja recomenda rezá-la com confiança e sempre em comunhão com a vida sacramental (confissão e Eucaristia).",
+    "texto": "Senhor Jesus, vós sois o médico da alma e do corpo.<br>Venho a vós como estou, com as minhas feridas e cansaços.<br>Curai o que em mim está doente,<br>consolai o que está ferido,<br>libertai o que está preso.<br>Curai as minhas memórias, as minhas mágoas e os meus medos.<br>Enchei-me do vosso Espírito Santo<br>e restaurai em mim a paz, a esperança e a fé.<br>Eu confio em vós, Senhor, hoje e sempre. Amém.",
+    "sobre": "<p>Reze com serenidade e confiança. A cura mais profunda é sempre interior; procure também os sacramentos e, quando necessário, ajuda humana e acompanhamento na sua comunidade.</p>",
+    "related": [
+      "oracao-poder-sangue-jesus",
+      "alma-de-cristo",
+      "vinde-espirito-santo"
+    ]
+  },
+  {
+    "slug": "salve-rainha",
+    "nome": "Salve-Rainha",
+    "cat": "Marianas",
+    "img": "salve-rainha",
+    "sub": "A antiga súplica à Mãe de misericórdia.",
+    "intro": "A <strong>Salve-Rainha</strong> é uma das mais belas orações marianas. Dirigimo-nos a Maria como &ldquo;Mãe de misericórdia&rdquo; e nossa advogada, pedindo que nos conduza a Jesus. Encerra o Santo Terço.",
+    "texto": "Salve, Rainha, Mãe de misericórdia,<br>vida, doçura e esperança nossa, salve!<br>A vós bradamos, os degredados filhos de Eva.<br>A vós suspiramos, gemendo e chorando neste vale de lágrimas.<br>Eia, pois, advogada nossa,<br>esses vossos olhos misericordiosos a nós volvei.<br>E depois deste desterro, mostrai-nos Jesus,<br>bendito fruto do vosso ventre.<br>Ó clemente, ó piedosa, ó doce sempre Virgem Maria.<br>Rogai por nós, santa Mãe de Deus,<br>para que sejamos dignos das promessas de Cristo. Amém.",
+    "sobre": "<p>Na Salve-Rainha reconhecemos a nossa condição de peregrinos neste &ldquo;vale de lágrimas&rdquo; e confiamos que Maria, nossa advogada, nos mostrará Jesus.</p>",
+    "related": [
+      "angelus",
+      "consagracao-nossa-senhora",
+      "oracao-nossa-senhora-aparecida"
+    ]
+  },
+  {
+    "slug": "angelus",
+    "nome": "Ângelus",
+    "cat": "Marianas",
+    "img": "angelus",
+    "sub": "A oração da Encarnação, rezada de manhã, ao meio-dia e à tarde.",
+    "intro": "O <strong>Ângelus</strong> recorda, três vezes ao dia, o momento em que o Verbo se fez carne no seio de Maria. É rezado tradicionalmente às 6h, ao meio-dia e às 18h, ao som dos sinos. No Tempo Pascal, é substituído pelo <em>Regina Caeli</em>.",
+    "texto": "V. O Anjo do Senhor anunciou a Maria.<br>R. E ela concebeu do Espírito Santo. <span class=\"peca\">Ave-Maria&hellip;</span>V. Eis aqui a serva do Senhor.<br>R. Faça-se em mim segundo a vossa palavra. <span class=\"peca\">Ave-Maria&hellip;</span>V. E o Verbo se fez carne.<br>R. E habitou entre nós. <span class=\"peca\">Ave-Maria&hellip;</span>V. Rogai por nós, santa Mãe de Deus.<br>R. Para que sejamos dignos das promessas de Cristo.<br><span class=\"peca\">Oremos:</span>Derramai, ó Deus, a vossa graça em nossos corações,<br>para que, conhecendo pela mensagem do Anjo<br>a Encarnação de Cristo, vosso Filho,<br>cheguemos, por sua paixão e cruz,<br>à glória da ressurreição.<br>Por Cristo, Senhor nosso. Amém.",
+    "sobre": "<p>Rezar o Ângelus é parar, no meio do dia, para lembrar que Deus se fez homem por amor. Um costume antigo e bonito, que santifica as horas.</p>",
+    "related": [
+      "salve-rainha",
+      "magnificat",
+      "consagracao-nossa-senhora"
+    ]
+  },
+  {
+    "slug": "magnificat",
+    "nome": "Magnificat (Cântico de Maria)",
+    "cat": "Marianas",
+    "img": "rosas-marianas",
+    "sub": "O cântico de louvor de Maria, do Evangelho de Lucas.",
+    "intro": "O <strong>Magnificat</strong> é o cântico que Maria entoou na Visitação a sua prima Isabel (Lc 1,46-55). É a oração de louvor da Igreja, rezada todos os dias nas Vésperas. Nele, Maria exalta a Deus que faz grandes coisas nos humildes.",
+    "texto": "A minha alma engrandece ao Senhor<br>e o meu espírito se alegra em Deus, meu Salvador,<br>porque olhou para a humildade de sua serva.<br>Doravante todas as gerações me chamarão bem-aventurada,<br>pois o Todo-Poderoso fez em mim maravilhas,<br>e santo é o seu nome.<br>A sua misericórdia se estende de geração em geração<br>sobre aqueles que o temem.<br>Manifestou o poder do seu braço<br>e dispersou os soberbos.<br>Derrubou os poderosos de seus tronos<br>e exaltou os humildes.<br>Encheu de bens os famintos<br>e despediu os ricos de mãos vazias.<br>Acolheu Israel, seu servo,<br>lembrado da sua misericórdia,<br>como tinha prometido a nossos pais,<br>em favor de Abraão e sua descendência, para sempre. Amém.",
+    "sobre": "<p>O Magnificat é a alegria de quem reconhece tudo como dom de Deus. Reze-o em ação de graças, especialmente quando o Senhor fizer o bem em sua vida. Fonte: Lucas 1,46-55.</p>",
+    "related": [
+      "angelus",
+      "salve-rainha",
+      "vinde-espirito-santo"
+    ]
+  },
+  {
+    "slug": "consagracao-nossa-senhora",
+    "nome": "Consagração à Nossa Senhora",
+    "cat": "Marianas",
+    "img": "coroa-estrelas",
+    "sub": "Entregar-se inteiramente a Maria, para ser todo de Jesus.",
+    "intro": "A <strong>Consagração à Nossa Senhora</strong> é o ato de entregar-se por inteiro a Maria, para que ela nos conduza mais seguramente a Jesus. Esta é a fórmula tradicional e breve, rezada diariamente por quem vive a devoção mariana.",
+    "texto": "Ó Senhora minha, ó minha Mãe!<br>Eu me ofereço todo a vós<br>e, em prova da minha devoção para convosco,<br>eu vos consagro neste dia os meus olhos, os meus ouvidos,<br>a minha boca, o meu coração<br>e inteiramente todo o meu ser.<br>E, porque assim sou vosso, ó incomparável Mãe,<br>guardai-me e defendei-me como coisa e propriedade vossa. Amém.",
+    "sobre": "<p>Reze esta consagração todos os dias, de manhã. Entregar-se a Maria não afasta de Jesus: aproxima, porque nenhuma mãe guarda para si o que é do Filho.</p>",
+    "related": [
+      "consagracao-nossa-senhora-aparecida",
+      "maria-passa-na-frente",
+      "salve-rainha"
+    ]
+  },
+  {
+    "slug": "maria-passa-na-frente",
+    "nome": "Oração &ldquo;Maria, passai na frente&rdquo;",
+    "cat": "Marianas",
+    "img": "ns-gracas",
+    "sub": "Confiar a Maria os caminhos antes de cada passo do dia.",
+    "intro": "A oração <strong>&ldquo;Maria, passai na frente&rdquo;</strong> é uma súplica curta e cheia de confiança filial: pedimos que Nossa Senhora vá adiante de nós, abrindo os caminhos e cuidando do que não vemos nem podemos.",
+    "texto": "Maria, passai na frente.<br>O que eu não vejo, vós vedes;<br>o que eu não sei, vós sabeis;<br>o que eu não posso, vós podeis.<br>Ó Mãe, passai na frente de mim,<br>abri os meus caminhos, guiai os meus passos<br>e cuidai de tudo o que eu confio a vós hoje.<br>Em vossas mãos eu me entrego. Amém.",
+    "sobre": "<p>Reze ao sair de casa, antes de uma viagem, de uma conversa difícil ou de uma decisão. É confiar a Maria o que está além do nosso alcance.</p>",
+    "related": [
+      "consagracao-nossa-senhora",
+      "oracao-desatadora-dos-nos",
+      "oracao-nossa-senhora-aparecida"
+    ]
+  },
+  {
+    "slug": "consagracao-nossa-senhora-aparecida",
+    "nome": "Consagração à Nossa Senhora Aparecida",
+    "cat": "Marianas",
+    "img": "aparecida",
+    "sub": "Entregar o Brasil, a família e a própria vida à Padroeira.",
+    "intro": "A <strong>Consagração à Nossa Senhora Aparecida</strong> entrega à Padroeira do Brasil a nação, a família e a própria vida, pedindo a sua proteção materna. É rezada de modo especial na festa de <strong>12 de outubro</strong> e nas novenas à Mãe Aparecida.",
+    "texto": "Ó Virgem Imaculada, Nossa Senhora Aparecida,<br>Padroeira do Brasil,<br>eu me consagro inteiramente ao vosso Coração de Mãe.<br>A vós entrego a minha vida, a minha família e o meu país.<br>Guardai a fé do povo brasileiro,<br>protegei os nossos lares e abençoai os nossos filhos.<br>Fazei de mim um verdadeiro filho vosso,<br>fiel a Jesus e à Igreja.<br>Ó Senhora Aparecida, eu sou todo vosso<br>e tudo o que tenho vos pertence. Amém.",
+    "sobre": "<p>Renove esta consagração na festa da Padroeira e sempre que quiser reafirmar que pertence a Jesus, pelas mãos de Maria Aparecida.</p>",
+    "related": [
+      "oracao-nossa-senhora-aparecida",
+      "consagracao-nossa-senhora",
+      "novena-nossa-senhora-aparecida"
+    ]
+  },
+  {
+    "slug": "oficio-imaculada-conceicao",
+    "nome": "Ofício da Imaculada Conceição",
+    "cat": "Marianas",
+    "img": "imaculada",
+    "sub": "A antiga devoção de louvor à Imaculada, rezada em horas.",
+    "intro": "O <strong>Ofício da Imaculada Conceição</strong> é uma devoção tradicional de louvor a Maria concebida sem pecado, dividida em horas (Matinas, Laudes, Prima&hellip;), à imitação da Liturgia das Horas. Abaixo está a invocação de abertura, rezada no início do Ofício.",
+    "texto": "V. Abri, Senhora, os meus lábios em vosso louvor.<br>R. Livrai a minha língua de toda palavra ociosa e perniciosa.<br>V. Infundi, Senhora, em minha alma a vossa graça.<br>R. Para que, como o orvalho sobre a relva, ela desça sobre o meu coração.<br>V. Vinde em meu auxílio, ó Rainha Imaculada.<br>R. E livrai-me, Senhora, de todo mal. Amém.<br><span class=\"peca\">O Ofício completo prossegue com os hinos e antífonas de cada hora.</span>",
+    "sobre": "<p>O Ofício completo é rezado a partir de livretos próprios da devoção. Esta abertura serve de porta de entrada. A Imaculada Conceição é celebrada em <strong>8 de dezembro</strong>.</p>",
+    "related": [
+      "consagracao-nossa-senhora",
+      "angelus",
+      "magnificat"
+    ]
+  },
+  {
+    "slug": "oracao-nossa-senhora-aparecida",
+    "nome": "Oração à Nossa Senhora Aparecida",
+    "cat": "Marianas",
+    "img": "aparecida",
+    "sub": "À Padroeira do Brasil, mãe e advogada dos aflitos.",
+    "intro": "A <strong>Oração à Nossa Senhora Aparecida</strong> é dirigida à Padroeira do Brasil. Sob o título de Imaculada Conceição Aparecida, Maria é invocada por milhões de brasileiros como mãe, refúgio e advogada.",
+    "texto": "Ó Virgem Imaculada, Mãe de Deus e minha Mãe,<br>Nossa Senhora Aparecida,<br>do alto do vosso trono de bondade,<br>olhai com misericórdia para mim.<br>Convosco me alegro pelas graças<br>com que Deus vos cumulou<br>e, cheio de confiança, recorro à vossa proteção.<br>Alcançai-me de vosso Filho Jesus a graça que agora vos peço<br><span class=\"peca\">(faça o seu pedido)</span>se for para a glória de Deus e o bem da minha alma.<br>Ó Senhora Aparecida, Padroeira do Brasil,<br>rogai por nós, vossos filhos. Amém.",
+    "sobre": "<p>Nossa Senhora Aparecida é celebrada em <strong>12 de outubro</strong>, feriado nacional. Recorra a ela com confiança de filho: nenhuma mãe abandona os seus.</p>",
+    "related": [
+      "consagracao-nossa-senhora-aparecida",
+      "oracao-desatadora-dos-nos",
+      "novena-nossa-senhora-aparecida"
+    ]
+  },
+  {
+    "slug": "oracao-desatadora-dos-nos",
+    "nome": "Oração à Nossa Senhora Desatadora dos Nós",
+    "cat": "Marianas",
+    "img": "desatadora",
+    "sub": "Para os nós e problemas que parecem impossíveis de desatar.",
+    "intro": "A <strong>Oração à Nossa Senhora Desatadora dos Nós</strong> entrega a Maria os &ldquo;nós&rdquo; da vida &mdash; conflitos, mágoas e problemas que parecem sem solução &mdash; confiando que em suas mãos nenhum nó é impossível de desfazer.",
+    "texto": "Virgem Maria, Mãe que nunca deixou de socorrer<br>os vossos filhos em necessidade,<br>Mãe cujas mãos trabalham sem cessar por nós,<br>dirigi para mim o vosso olhar compassivo.<br>Vede o emaranhado de nós que sufocam a minha vida.<br>Vós conheceis o meu desespero e a minha dor.<br>Com confiança, entrego-vos a fita da minha vida.<br>Em vossas mãos não há nó que não possa ser desfeito.<br>Mãe poderosa, pela vossa graça e intercessão junto a vosso Filho Jesus,<br>recebei hoje este nó <span class=\"peca\">(faça o seu pedido)</span>e, para a glória de Deus, desatai-o para sempre.<br>Em vós espero. Amém.",
+    "sobre": "<p>Reze com paciência, muitas vezes por nove dias (novena). Confiar o nó às mãos de Maria é, antes de tudo, confiá-lo ao amor de Deus.</p>",
+    "related": [
+      "oracao-nossa-senhora-aparecida",
+      "maria-passa-na-frente",
+      "novena-desatadora-dos-nos"
+    ]
+  },
+  {
+    "slug": "oracao-sao-miguel-arcanjo",
+    "nome": "Oração a São Miguel Arcanjo",
+    "cat": "Santos e Anjos",
+    "img": "sao-miguel-pintura",
+    "sub": "A poderosa oração de proteção contra o mal.",
+    "intro": "A <strong>Oração a São Miguel Arcanjo</strong> foi composta pelo Papa Leão XIII e é rezada pelos católicos como pedido de proteção contra as ciladas do mal. São Miguel é o príncipe da milícia celeste, defensor do povo de Deus.",
+    "texto": "São Miguel Arcanjo, defendei-nos no combate,<br>sede o nosso refúgio contra as maldades e ciladas do demônio.<br>Instantemente pedimos que Deus sobre ele impere.<br>E vós, príncipe da milícia celeste,<br>pela virtude divina, precipitai no inferno a Satanás<br>e a todos os espíritos malignos<br>que andam pelo mundo para perder as almas. Amém.",
+    "sobre": "<p>Reze esta oração nos momentos de luta espiritual, de medo ou de tentação. São Miguel &mdash; cujo nome significa &ldquo;Quem como Deus?&rdquo; &mdash; nos recorda que nenhum mal é maior do que o poder do Senhor. Composta pelo Papa Leão XIII (1886).</p>",
+    "related": [
+      "oracao-santo-anjo",
+      "oracao-sao-bento",
+      "oracao-poder-sangue-jesus"
+    ]
+  },
+  {
+    "slug": "oracao-santo-anjo",
+    "nome": "Oração ao Santo Anjo da Guarda",
+    "cat": "Santos e Anjos",
+    "img": "anjo-guarda",
+    "sub": "A oração de proteção que aprendemos ainda crianças.",
+    "intro": "A <strong>Oração ao Santo Anjo da Guarda</strong> recorda que Deus confiou a cada um de nós um anjo para nos guardar e guiar. É uma das primeiras orações que aprendemos e acompanha toda a vida.",
+    "texto": "Santo Anjo do Senhor, meu zeloso guardador,<br>se a ti me confiou a piedade divina,<br>sempre me rege, me guarda, me governa e ilumina. Amém.",
+    "sobre": "<p>Reze ao Santo Anjo ao acordar, ao dormir e nos momentos de perigo. A Igreja celebra os Santos Anjos da Guarda em <strong>2 de outubro</strong>.</p>",
+    "related": [
+      "oracao-sao-miguel-arcanjo",
+      "oracao-sao-bento",
+      "sinal-da-cruz"
+    ]
+  },
+  {
+    "slug": "oracao-santo-expedito",
+    "nome": "Oração a Santo Expedito",
+    "cat": "Santos e Anjos",
+    "img": "santo-expedito",
+    "sub": "O santo das causas justas e urgentes.",
+    "intro": "A <strong>Oração a Santo Expedito</strong> é uma das mais procuradas no Brasil. Santo Expedito é invocado como o santo das <strong>causas justas e urgentes</strong>, por quem precisa de uma graça com rapidez e vive um momento de aflição.",
+    "texto": "Meu Santo Expedito das causas justas e urgentes,<br>socorrei-me nesta hora de aflição e desespero.<br>Intercedei por mim junto a Nosso Senhor Jesus Cristo.<br>Vós que sois o santo dos aflitos,<br>vós que sois o santo dos desesperados,<br>vós que sois o santo das causas urgentes,<br>protegei-me, ajudai-me, dai-me força, coragem e serenidade.<br><span class=\"peca\">(Faça o seu pedido.)</span>Ajudai-me a superar estas horas difíceis,<br>protegei-me de todos os que possam me prejudicar.<br>Protegei a minha família. Atendei ao meu pedido com urgência.<br>Devolvei-me a paz e a tranquilidade.<br>Serei grato pelo resto da minha vida<br>e levarei o vosso nome a todos os que têm fé. Amém.",
+    "sobre": "<p>É costume, ao fim da oração, rezar um Pai-Nosso, uma Ave-Maria e fazer o Sinal da Cruz. Santo Expedito é festejado em <strong>19 de abril</strong>.</p>",
+    "related": [
+      "oracao-sao-judas-tadeu",
+      "oracao-santa-rita",
+      "novena-santo-expedito"
+    ]
+  },
+  {
+    "slug": "oracao-sao-judas-tadeu",
+    "nome": "Oração a São Judas Tadeu",
+    "cat": "Santos e Anjos",
+    "img": "sao-judas",
+    "sub": "O apóstolo das causas difíceis e desesperadas.",
+    "intro": "A <strong>Oração a São Judas Tadeu</strong>, apóstolo de Jesus, é invocada por quem enfrenta <strong>causas difíceis e desesperadas</strong>. Sua festa, em <strong>28 de outubro</strong>, reúne multidões em todo o Brasil.",
+    "texto": "São Judas Tadeu, apóstolo glorioso,<br>fiel servo e amigo de Jesus,<br>a Igreja vos honra e invoca universalmente<br>como o patrono dos casos difíceis e desesperados.<br>Rogai por mim, que estou tão necessitado.<br>Fazei uso, eu vos imploro, desse particular privilégio<br>de socorrer pronta e visivelmente<br>quando quase toda a esperança já se perdeu.<br>Vinde em meu auxílio nesta grande necessidade,<br>para que eu receba as consolações e o socorro do Céu<br>em todas as minhas necessidades, tribulações e sofrimentos,<br>particularmente <span class=\"peca\">(faça o seu pedido)</span>e para que eu possa bendizer a Deus convosco e com todos os eleitos<br>por toda a eternidade. Amém.",
+    "sobre": "<p>São Judas nunca abandona quem a ele recorre com fé. Reze com confiança e perseverança, aceitando sempre a vontade de Deus para a sua vida.</p>",
+    "related": [
+      "oracao-santo-expedito",
+      "oracao-santa-rita",
+      "novena-sao-judas-tadeu"
+    ]
+  },
+  {
+    "slug": "oracao-santa-rita",
+    "nome": "Oração à Santa Rita de Cássia",
+    "cat": "Santos e Anjos",
+    "img": "santa-rita",
+    "sub": "A advogada das causas impossíveis.",
+    "intro": "A <strong>Oração à Santa Rita de Cássia</strong> é dirigida à &ldquo;santa das causas impossíveis&rdquo;. Esposa, mãe e depois religiosa, Santa Rita passou por toda sorte de provações e por isso é invocada por quem vive situações sem saída.",
+    "texto": "Ó poderosa e gloriosa Santa Rita,<br>chamada advogada das causas impossíveis e desesperadas,<br>vós que fostes exemplo em todos os estados de vida,<br>intercedei por mim junto a Nosso Senhor Jesus Cristo.<br>Alcançai-me a graça que tanto necessito<br><span class=\"peca\">(faça o seu pedido)</span>se for para a glória de Deus e o bem da minha alma.<br>Dai-me paciência nas dificuldades<br>e confiança na divina Providência.<br>Santa Rita, rogai por nós. Amém.",
+    "sobre": "<p>Santa Rita de Cássia é festejada em <strong>22 de maio</strong>. Recorra a ela nas dores da família, do casamento e nas causas que parecem perdidas.</p>",
+    "related": [
+      "oracao-sao-judas-tadeu",
+      "oracao-santa-teresinha",
+      "novena-santa-rita"
+    ]
+  },
+  {
+    "slug": "oracao-sao-bento",
+    "nome": "Oração a São Bento",
+    "cat": "Santos e Anjos",
+    "img": "sao-bento",
+    "sub": "Proteção da casa, da família e contra o mal.",
+    "intro": "A <strong>Oração a São Bento</strong> é rezada por proteção da casa e da família e contra todo mal. A ela se liga a célebre <strong>Medalha de São Bento</strong>, sinal de bênção e defesa espiritual.",
+    "texto": "Ó glorioso patriarca São Bento,<br>modelo de todas as virtudes e puro vaso da graça de Deus,<br>humildemente me prostro diante de vós<br>e imploro a vossa proteção.<br>Afastai de mim todo perigo do corpo e da alma;<br>afastai da minha casa e da minha família<br>todo mal e toda influência maligna.<br>Abençoai-me, meu querido pai São Bento,<br>e alcançai-me a graça de viver santamente<br>e de perseverar no bem até o fim. Amém.",
+    "sobre": "<p>A Cruz de São Bento traz as iniciais latinas de uma oração contra o mal: <em>&ldquo;Que a santa Cruz seja a minha luz; que o dragão nunca seja meu guia.&rdquo;</em> São Bento é festejado em <strong>11 de julho</strong>.</p>",
+    "related": [
+      "oracao-sao-miguel-arcanjo",
+      "oracao-santo-anjo",
+      "novena-sao-bento"
+    ]
+  },
+  {
+    "slug": "oracao-santo-antonio",
+    "nome": "Oração a Santo Antônio",
+    "cat": "Santos e Anjos",
+    "img": "santo-antonio",
+    "sub": "O santo casamenteiro e protetor das coisas perdidas.",
+    "intro": "A <strong>Oração a Santo Antônio</strong> é dirigida a um dos santos mais queridos do Brasil, invocado por quem procura o que perdeu &mdash; objetos, caminhos, a paz, um amor &mdash; e pelas famílias. Santo Antônio de Pádua (ou de Lisboa) é também doutor da Igreja.",
+    "texto": "Ó glorioso Santo Antônio,<br>amigo dos pobres e dos aflitos,<br>vós que recebestes de Deus o dom de ajudar<br>quem procura o que perdeu,<br>intercedei por mim junto ao Senhor.<br>Ajudai-me a reencontrar o que me falta<br><span class=\"peca\">(faça o seu pedido)</span>e, acima de tudo, a nunca perder a fé,<br>a esperança e o amor a Deus.<br>Santo Antônio, rogai por nós. Amém.",
+    "sobre": "<p>Santo Antônio é festejado em <strong>13 de junho</strong>, no tempo dos festejos juninos. Famoso é o seu Responsório: <em>&ldquo;Se buscais milagres&hellip;&rdquo;</em>. A novena a ele é, na verdade, a Trezena (treze dias).</p>",
+    "related": [
+      "oracao-sao-jose",
+      "oracao-santa-rita",
+      "novena-santo-antonio"
+    ]
+  },
+  {
+    "slug": "oracao-sao-jose",
+    "nome": "Oração a São José",
+    "cat": "Santos e Anjos",
+    "img": "sao-jose",
+    "sub": "Ao protetor da Sagrada Família e dos trabalhadores.",
+    "intro": "A <strong>Oração a São José</strong> é dirigida ao esposo de Maria e pai adotivo de Jesus, patrono da Igreja universal, das famílias, dos trabalhadores e da boa morte. Esta é a oração tradicional atribuída ao Papa Leão XIII.",
+    "texto": "A vós, bem-aventurado São José,<br>recorremos na nossa tribulação<br>e, depois de implorar o auxílio de vossa santíssima Esposa,<br>cheios de confiança solicitamos também o vosso patrocínio.<br>Por esse laço sagrado de caridade<br>que vos uniu à Virgem Imaculada, Mãe de Deus,<br>e pelo amor paternal que tivestes ao Menino Jesus,<br>humildemente vos suplicamos<br>que olheis com bondade para a herança<br>que Jesus Cristo conquistou com o seu Sangue,<br>e nos socorrais com o vosso poder e auxílio.<br>Protegei, ó guarda providentíssimo da Sagrada Família,<br>a família dos filhos de Deus.<br>Afastai de nós todo mal e, assim como outrora<br>salvastes o Menino Jesus do perigo,<br>defendei agora a santa Igreja de Deus. Amém.",
+    "sobre": "<p>São José tem duas festas: <strong>19 de março</strong> (São José, esposo de Maria) e <strong>1º de maio</strong> (São José Operário). Reze a ele pelo trabalho, pela família e por uma boa morte.</p>",
+    "related": [
+      "oracao-santo-antonio",
+      "consagracao-nossa-senhora",
+      "novena-sao-jose"
+    ]
+  },
+  {
+    "slug": "oracao-santa-teresinha",
+    "nome": "Oração à Santa Teresinha do Menino Jesus",
+    "cat": "Santos e Anjos",
+    "img": "santa-teresinha",
+    "sub": "A santa do &ldquo;caminho da confiança&rdquo; e da chuva de rosas.",
+    "intro": "A <strong>Oração à Santa Teresinha do Menino Jesus</strong> invoca a &ldquo;Santinha de Lisieux&rdquo;, doutora da Igreja, que ensinou o &ldquo;pequeno caminho&rdquo; da confiança e do amor nas pequenas coisas. Ela prometeu fazer cair do Céu uma chuva de rosas.",
+    "texto": "Ó Santa Teresinha do Menino Jesus,<br>que prometestes fazer descer do Céu<br>uma chuva de rosas,<br>e passar o vosso Céu fazendo o bem na terra,<br>atendei ao meu pedido<br><span class=\"peca\">(faça o seu pedido)</span>e alcançai-me a graça de amar a Deus<br>com um coração simples e confiante, como o vosso.<br>Ensinai-me o vosso pequeno caminho<br>de confiança e abandono nas mãos do Pai.<br>Santa Teresinha, rogai por nós. Amém.",
+    "sobre": "<p>Santa Teresinha é festejada em <strong>1º de outubro</strong>. Reze a ela nas pequenas coisas do dia: foi aí, e não em grandes feitos, que ela encontrou a santidade.</p>",
+    "related": [
+      "oracao-santa-rita",
+      "oracao-sao-francisco",
+      "novena-santa-teresinha"
+    ]
+  }
+]

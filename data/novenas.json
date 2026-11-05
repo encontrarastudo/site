@@ -1,0 +1,359 @@
+[
+  {
+    "slug": "novena-preciosissimo-sangue",
+    "nome": "Novena ao Preciosíssimo Sangue de Jesus",
+    "grp": "A Jesus e ao Espírito Santo",
+    "cat": "Devoção a Jesus",
+    "img": "sangue-calice",
+    "sub": "Nove dias de confiança na força redentora do Sangue de Cristo.",
+    "intro": "<p>A <strong>Novena ao Preciosíssimo Sangue de Jesus</strong> venera o Sangue que Cristo derramou na cruz para a nossa salvação. É uma devoção de proteção, cura e reparação. O mês de <strong>julho</strong> é dedicado ao Preciosíssimo Sangue.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Senhor Jesus Cristo, pelo vosso Preciosíssimo Sangue<br>derramado na cruz pela nossa salvação,<br>eu vos adoro e vos dou graças.<br>Cobri com o vosso Sangue a mim, a minha família e o meu lar.<br>Purificai o meu coração, curai as minhas feridas<br>e livrai-me de todo mal.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e dai-me a graça de viver sempre unido a vós.<br>A vós, Jesus, toda a glória e todo o louvor. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "Mês de julho",
+    "related": [
+      "oracao-poder-sangue-jesus",
+      "novena-sagrado-coracao"
+    ]
+  },
+  {
+    "slug": "novena-sagrado-coracao",
+    "nome": "Novena ao Sagrado Coração de Jesus",
+    "grp": "A Jesus e ao Espírito Santo",
+    "cat": "Devoção a Jesus",
+    "img": "sagrado-coracao",
+    "sub": "Nove dias ao Coração de Jesus, fonte de amor e misericórdia.",
+    "intro": "<p>A <strong>Novena ao Sagrado Coração de Jesus</strong> honra o Coração de Cristo, símbolo do seu amor sem medida pela humanidade. A devoção, difundida a partir de Santa Margarida Maria Alacoque, culmina na festa do Sagrado Coração, em <strong>junho</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Sagrado Coração de Jesus,<br>fonte de todo amor e de toda misericórdia,<br>eu confio em vós e a vós entrego a minha vida.<br>Fazei o meu coração semelhante ao vosso:<br>manso, humilde e cheio de caridade.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e reinai, Senhor, sobre a minha família e o meu coração.<br>Sagrado Coração de Jesus, em vós confio. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "Mês de junho",
+    "related": [
+      "novena-jesus-misericordioso",
+      "novena-preciosissimo-sangue"
+    ]
+  },
+  {
+    "slug": "novena-jesus-misericordioso",
+    "nome": "Novena a Jesus Misericordioso (Divina Misericórdia)",
+    "grp": "A Jesus e ao Espírito Santo",
+    "cat": "Devoção a Jesus",
+    "img": "divina-misericordia",
+    "sub": "Nove dias confiando na Misericórdia infinita de Deus.",
+    "intro": "<p>A <strong>Novena à Divina Misericórdia</strong> foi pedida pelo próprio Jesus a Santa Faustina Kowalska. Começa tradicionalmente na Sexta-feira Santa e culmina no <strong>Domingo da Divina Misericórdia</strong> (segundo domingo da Páscoa).</p>",
+    "como": "<p>Reze por <strong>nove dias</strong>, tradicionalmente da Sexta-feira Santa ao sábado seguinte. A cada dia, apresenta-se a Jesus um grupo de almas e reza-se a oração abaixo, seguida do Terço da Divina Misericórdia.</p>",
+    "oracao": "Ó Jesus Misericordioso, cuja bondade é infinita<br>e cujo tesouro de graças é inesgotável,<br>eu confio inteiramente na vossa Misericórdia,<br>que é maior do que todos os meus pecados.<br>Olhai para mim e para toda a humanidade<br>com os olhos da vossa compaixão.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>Jesus, eu confio em vós. Amém.",
+    "fecho": "Terço da Divina Misericórdia.",
+    "festa": "Domingo da Divina Misericórdia (após a Páscoa)",
+    "related": [
+      "novena-sagrado-coracao",
+      "novena-pentecostes"
+    ]
+  },
+  {
+    "slug": "novena-pentecostes",
+    "nome": "Novena de Pentecostes (ao Espírito Santo)",
+    "grp": "A Jesus e ao Espírito Santo",
+    "cat": "Espírito Santo",
+    "img": "pentecostes",
+    "sub": "A primeira novena da história: nove dias pela vinda do Espírito.",
+    "intro": "<p>A <strong>Novena de Pentecostes</strong> é considerada a primeira novena da história: os Apóstolos e Maria permaneceram nove dias em oração, no Cenáculo, aguardando o Espírito Santo. É rezada entre a <strong>Ascensão</strong> e o <strong>Domingo de Pentecostes</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Vinde, Espírito Santo, enchei os corações dos vossos fiéis<br>e acendei neles o fogo do vosso amor.<br>Vinde, Pai dos pobres; vinde, luz dos corações.<br>Derramai sobre mim os vossos sete dons.<br>Dai-me sabedoria, entendimento e conselho,<br>fortaleza, ciência, piedade e temor de Deus.<br>Renovai a minha vida e fazei de mim<br>uma testemunha corajosa do Evangelho.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>Vinde, Espírito Santo! Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "Pentecostes (50 dias após a Páscoa)",
+    "related": [
+      "vinde-espirito-santo",
+      "novena-jesus-misericordioso"
+    ]
+  },
+  {
+    "slug": "novena-natal",
+    "nome": "Novena de Natal",
+    "grp": "A Jesus e ao Espírito Santo",
+    "cat": "Tempo do Advento",
+    "img": "natal",
+    "sub": "Nove dias de preparação para o nascimento de Jesus.",
+    "intro": "<p>A <strong>Novena de Natal</strong> prepara o coração para a vinda do Menino Jesus. É rezada nos nove dias que antecedem o Natal, de <strong>16 a 24 de dezembro</strong>, muitas vezes reunindo a família diante do presépio.</p>",
+    "como": "<p>Reze de <strong>16 a 24 de dezembro</strong>. A cada dia, reúna a família diante do presépio, acenda uma vela, leia um trecho do Evangelho da Infância e reze a oração abaixo.</p>",
+    "oracao": "Ó Deus, que preparastes o mundo para receber o vosso Filho,<br>preparai também o meu coração para o Natal.<br>Vinde, Senhor Jesus, nascer em mim.<br>Que eu saiba acolher-vos nos pobres, nos pequenos<br>e em todos os que precisam de amor.<br>Dai à minha família a paz, a união e a alegria<br>do verdadeiro Natal.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>Vinde, Senhor Jesus! Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "25 de dezembro",
+    "related": [
+      "novena-nossa-senhora-aparecida",
+      "novena-sagrado-coracao"
+    ]
+  },
+  {
+    "slug": "novena-maos-ensanguentadas",
+    "nome": "Novena das Mãos Ensanguentadas (Nossa Senhora das Graças)",
+    "grp": "A Nossa Senhora",
+    "cat": "Mariana",
+    "img": "ns-gracas",
+    "sub": "Nove dias de súplica confiante à Mãe das Graças.",
+    "intro": "<p>A <strong>Novena das Mãos Ensanguentadas</strong> é uma súplica de grande confiança a Nossa Senhora das Graças, rezada em momentos de aflição e por causas urgentes. É uma devoção popular muito difundida no Brasil.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó Maria, Mãe das Graças,<br>por aquelas mãos que tudo podem junto a vosso Filho,<br>eu venho, com toda a confiança, suplicar o vosso socorro.<br>Vós sois a Mãe que nunca abandona os seus filhos.<br>Olhai para a minha aflição e intercedei por mim.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>se for para a glória de Deus e o bem da minha alma.<br>Ó Mãe das Graças, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "",
+    "related": [
+      "oracao-nossa-senhora-aparecida",
+      "novena-desatadora-dos-nos"
+    ]
+  },
+  {
+    "slug": "novena-desatadora-dos-nos",
+    "nome": "Novena à Nossa Senhora Desatadora dos Nós",
+    "grp": "A Nossa Senhora",
+    "cat": "Mariana",
+    "img": "desatadora",
+    "sub": "Nove dias para entregar a Maria os nós da vida.",
+    "intro": "<p>A <strong>Novena à Nossa Senhora Desatadora dos Nós</strong> entrega a Maria, por nove dias, os &ldquo;nós&rdquo; que apertam a vida &mdash; conflitos, mágoas e problemas sem solução aparente &mdash; pedindo que ela os desate com o seu amor de Mãe.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Virgem Maria, Mãe que nunca deixou de socorrer<br>os vossos filhos em necessidade,<br>cujas mãos trabalham sem cessar por nós,<br>vede o emaranhado de nós que sufocam a minha vida.<br>Com confiança, entrego-vos a fita da minha vida.<br>Em vossas mãos não há nó que não possa ser desfeito.<br>Recebei hoje este nó<br><span class=\"peca\">(apresente a sua intenção)</span>e, para a glória de Deus, desatai-o para sempre.<br>Em vós espero. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "",
+    "related": [
+      "oracao-desatadora-dos-nos",
+      "novena-nossa-senhora-aparecida"
+    ]
+  },
+  {
+    "slug": "novena-nossa-senhora-aparecida",
+    "nome": "Novena à Nossa Senhora Aparecida",
+    "grp": "A Nossa Senhora",
+    "cat": "Padroeira do Brasil",
+    "img": "aparecida",
+    "sub": "Nove dias de confiança à Mãe Aparecida, Padroeira do Brasil.",
+    "intro": "<p>A <strong>Novena à Nossa Senhora Aparecida</strong> é rezada por milhões de brasileiros, especialmente nos nove dias que antecedem a festa da Padroeira, em <strong>12 de outubro</strong>. Confiamos à Mãe Aparecida uma intenção, perseverando por nove dias na oração.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó Virgem Imaculada, Mãe de Deus e minha Mãe,<br>Nossa Senhora Aparecida,<br>olhai com bondade para mim, vosso filho,<br>que confiante recorro à vossa proteção.<br>Alcançai-me de vosso Filho Jesus<br>a graça que vos peço nesta novena<br><span class=\"peca\">(apresente a sua intenção)</span>se for para a glória de Deus e o bem da minha alma.<br>Dai-me um coração fiel, humilde e perseverante.<br>Ó Senhora Aparecida, Padroeira do Brasil, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "12 de outubro",
+    "related": [
+      "oracao-nossa-senhora-aparecida",
+      "novena-desatadora-dos-nos"
+    ]
+  },
+  {
+    "slug": "novena-perpetuo-socorro",
+    "nome": "Novena à Nossa Senhora do Perpétuo Socorro",
+    "grp": "A Nossa Senhora",
+    "cat": "Mariana",
+    "img": "perpetuo-socorro",
+    "sub": "Nove dias à Mãe do perpétuo socorro, auxílio de todas as horas.",
+    "intro": "<p>A <strong>Novena à Nossa Senhora do Perpétuo Socorro</strong> invoca Maria como auxílio constante em todas as necessidades. A devoção, ligada ao célebre ícone, é especialmente rezada às quartas-feiras. Sua festa é em <strong>27 de junho</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó Mãe do Perpétuo Socorro,<br>a vós recorro com toda a confiança,<br>certo de que não ficarei sem o vosso auxílio.<br>Vós, que sois a Mãe que sempre socorre,<br>vinde em minha ajuda nesta necessidade.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e amparai-me em todas as horas da minha vida.<br>Ó Mãe do Perpétuo Socorro, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "27 de junho",
+    "related": [
+      "novena-nossa-senhora-aparecida",
+      "oracao-desatadora-dos-nos"
+    ]
+  },
+  {
+    "slug": "novena-fatima",
+    "nome": "Novena à Nossa Senhora de Fátima",
+    "grp": "A Nossa Senhora",
+    "cat": "Mariana",
+    "img": "fatima",
+    "sub": "Nove dias à Senhora de Fátima, que pediu oração e penitência.",
+    "intro": "<p>A <strong>Novena à Nossa Senhora de Fátima</strong> recorda as aparições de Maria aos três pastorinhos em 1917, quando pediu a reza do terço, a conversão e a devoção ao seu Imaculado Coração. Sua festa é em <strong>13 de maio</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó Nossa Senhora de Fátima,<br>que viestes do Céu para nos pedir oração e penitência,<br>eu vos saúdo e me consagro ao vosso Imaculado Coração.<br>Dai-me a graça de rezar o terço com fervor<br>e de converter-me verdadeiramente a Deus.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>pela paz no mundo e pela salvação das almas.<br>Ó Senhora do Rosário de Fátima, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "13 de maio",
+    "related": [
+      "novena-nossa-senhora-aparecida",
+      "novena-maos-ensanguentadas"
+    ]
+  },
+  {
+    "slug": "novena-nossa-senhora-lagrimas",
+    "nome": "Novena à Nossa Senhora das Lágrimas",
+    "grp": "A Nossa Senhora",
+    "cat": "Mariana",
+    "img": "dores",
+    "sub": "Nove dias de consolo com a Mãe que chora pelos seus filhos.",
+    "intro": "<p>A <strong>Novena à Nossa Senhora das Lágrimas</strong> busca o consolo e a intercessão de Maria, que une as suas lágrimas às nossas e nos conduz ao coração de Jesus. É uma devoção de confiança nos momentos de dor e sofrimento.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó Maria, Nossa Senhora das Lágrimas,<br>que chorastes ao pé da cruz pelos vossos filhos,<br>recebei as minhas lágrimas e as minhas dores.<br>Consolai-me na aflição e dai-me a esperança<br>que não vem do mundo, mas de Deus.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e enxugai as lágrimas do meu coração.<br>Ó Mãe das Lágrimas, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "",
+    "related": [
+      "novena-desatadora-dos-nos",
+      "oracao-nossa-senhora-aparecida"
+    ]
+  },
+  {
+    "slug": "novena-santa-rita",
+    "nome": "Novena à Santa Rita de Cássia",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Causas impossíveis",
+    "img": "santa-rita",
+    "sub": "Nove dias à advogada das causas impossíveis.",
+    "intro": "<p>A <strong>Novena à Santa Rita de Cássia</strong> é rezada por quem vive situações que parecem sem solução, nas dores da família e do coração. Santa Rita é a &ldquo;santa das causas impossíveis&rdquo;. Sua festa é em <strong>22 de maio</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó gloriosa Santa Rita,<br>advogada das causas impossíveis e desesperadas,<br>vós que tudo suportastes com fé e paciência,<br>intercedei por mim junto a Nosso Senhor.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>se for para a glória de Deus e o bem da minha alma.<br>Dai-me paciência nas provações<br>e confiança na divina Providência.<br>Santa Rita, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "22 de maio",
+    "related": [
+      "oracao-santa-rita",
+      "novena-santa-teresinha"
+    ]
+  },
+  {
+    "slug": "novena-santo-expedito",
+    "nome": "Novena a Santo Expedito",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Causas urgentes",
+    "img": "santo-expedito",
+    "sub": "Nove dias de súplica ao santo das causas justas e urgentes.",
+    "intro": "<p>A <strong>Novena a Santo Expedito</strong> é procurada por quem vive uma necessidade urgente e quer perseverar na oração. Santo Expedito, mártir dos primeiros séculos, é o santo das <strong>causas justas e urgentes</strong>. Sua festa é em <strong>19 de abril</strong>.</p>",
+    "como": "<p>Reze por <strong>nove dias seguidos</strong>. A cada dia: faça o Sinal da Cruz, apresente a sua causa, reze a oração abaixo e conclua com um Pai-Nosso e uma Ave-Maria. É costume, ao alcançar a graça, divulgar a devoção em agradecimento.</p>",
+    "oracao": "Meu Santo Expedito das causas justas e urgentes,<br>socorrei-me nesta necessidade.<br>Intercedei por mim junto a Nosso Senhor Jesus Cristo.<br>Vós, que sois o santo dos aflitos e das causas urgentes,<br>dai-me força, coragem e serenidade.<br>Atendei ao meu pedido<br><span class=\"peca\">(apresente a sua intenção)</span>e devolvei-me a paz.<br>Serei grato por toda a vida<br>e levarei o vosso nome aos que têm fé. Amém.",
+    "fecho": "Pai-Nosso e Ave-Maria.",
+    "festa": "19 de abril",
+    "related": [
+      "oracao-santo-expedito",
+      "novena-sao-judas-tadeu"
+    ]
+  },
+  {
+    "slug": "novena-sao-judas-tadeu",
+    "nome": "Novena a São Judas Tadeu",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Causas difíceis",
+    "img": "sao-judas",
+    "sub": "Nove dias ao apóstolo das causas difíceis e desesperadas.",
+    "intro": "<p>A <strong>Novena a São Judas Tadeu</strong> é rezada por quem enfrenta causas difíceis e quase sem esperança. Apóstolo de Jesus, São Judas é o patrono dos casos desesperados. Sua grande festa é em <strong>28 de outubro</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "São Judas Tadeu, apóstolo glorioso,<br>fiel servo e amigo de Jesus,<br>patrono dos casos difíceis e desesperados,<br>rogai por mim, que estou tão necessitado.<br>Vinde em meu auxílio nesta grande necessidade,<br>para que eu receba o socorro do Céu<br>em minhas tribulações e sofrimentos,<br>particularmente <span class=\"peca\">(apresente a sua intenção)</span>e para que eu bendiga a Deus convosco por toda a eternidade. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "28 de outubro",
+    "related": [
+      "oracao-sao-judas-tadeu",
+      "novena-santo-expedito"
+    ]
+  },
+  {
+    "slug": "novena-sao-bento",
+    "nome": "Novena a São Bento",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Proteção",
+    "img": "sao-bento",
+    "sub": "Nove dias de proteção da casa, da família e contra o mal.",
+    "intro": "<p>A <strong>Novena a São Bento</strong> é rezada por proteção do lar e da família e como defesa espiritual contra todo mal. A ela se liga a Medalha de São Bento, antigo sinal de bênção. Sua festa é em <strong>11 de julho</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó glorioso patriarca São Bento,<br>modelo de virtude e vaso da graça de Deus,<br>eu imploro a vossa proteção.<br>Afastai de mim, da minha casa e da minha família<br>todo perigo do corpo e da alma<br>e toda influência maligna.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e a perseverança no bem até o fim.<br>São Bento, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "11 de julho",
+    "related": [
+      "oracao-sao-bento",
+      "novena-sao-miguel"
+    ]
+  },
+  {
+    "slug": "novena-sao-miguel",
+    "nome": "Novena a São Miguel Arcanjo",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Proteção",
+    "img": "sao-miguel-vitral",
+    "sub": "Nove dias de defesa espiritual com o príncipe da milícia celeste.",
+    "intro": "<p>A <strong>Novena a São Miguel Arcanjo</strong> é rezada por proteção nas lutas espirituais e por libertação de todo mal. São Miguel é o defensor do povo de Deus. Sua festa, com os arcanjos Gabriel e Rafael, é em <strong>29 de setembro</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Glorioso São Miguel Arcanjo,<br>príncipe e chefe dos exércitos celestes,<br>defendei-me no combate contra o mal.<br>Sede o meu refúgio contra as ciladas do demônio.<br>Cobri-me com o vosso escudo e guardai a minha fé.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e conduzi-me, enfim, à presença de Deus.<br>São Miguel Arcanjo, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "29 de setembro",
+    "related": [
+      "oracao-sao-miguel-arcanjo",
+      "novena-sao-bento"
+    ]
+  },
+  {
+    "slug": "novena-sao-jose",
+    "nome": "Novena a São José",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Protetor da família",
+    "img": "sao-jose",
+    "sub": "Nove dias ao protetor da Sagrada Família e dos trabalhadores.",
+    "intro": "<p>A <strong>Novena a São José</strong> é rezada por quem busca a proteção do esposo de Maria e pai adotivo de Jesus &mdash; patrono da Igreja, das famílias, dos trabalhadores e da boa morte. Suas festas são em <strong>19 de março</strong> e <strong>1º de maio</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Glorioso São José,<br>esposo de Maria e pai adotivo de Jesus,<br>fiel guardião da Sagrada Família,<br>a vós recorro com confiança.<br>Protegei a minha família, o meu trabalho e a minha fé.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e ensinai-me a trabalhar e a viver na presença de Deus,<br>como vós vivestes. São José, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "19 de março",
+    "related": [
+      "oracao-sao-jose",
+      "novena-santo-antonio"
+    ]
+  },
+  {
+    "slug": "novena-santo-antonio",
+    "nome": "Trezena de Santo Antônio",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Treze dias",
+    "img": "santo-antonio",
+    "sub": "Treze dias ao santo casamenteiro e protetor dos que procuram.",
+    "intro": "<p>A devoção a Santo Antônio é, na verdade, uma <strong>Trezena</strong>: são <strong>treze dias</strong> de oração (de 1º a 13 de junho), e não nove. Santo Antônio é invocado por quem procura o que perdeu, pelos noivos e pelas famílias. Sua festa é em <strong>13 de junho</strong>.</p>",
+    "como": "<p>Reze durante <strong>treze dias</strong>, de 1º a 13 de junho. Em cada dia: faça o Sinal da Cruz, apresente a sua intenção, reze a oração abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó glorioso Santo Antônio,<br>amigo dos pobres e dos aflitos,<br>vós que recebestes de Deus o dom de ajudar<br>quem procura o que perdeu,<br>intercedei por mim junto ao Senhor.<br>Alcançai-me a graça que nesta trezena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e, acima de tudo, que eu nunca perca a fé.<br>Santo Antônio, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "13 de junho",
+    "related": [
+      "oracao-santo-antonio",
+      "novena-sao-jose"
+    ]
+  },
+  {
+    "slug": "novena-santa-teresinha",
+    "nome": "Novena à Santa Teresinha (Chuva de Rosas)",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Chuva de rosas",
+    "img": "santa-teresinha",
+    "sub": "Nove dias à santa que prometeu uma chuva de rosas do Céu.",
+    "intro": "<p>A <strong>Novena à Santa Teresinha do Menino Jesus</strong>, conhecida como &ldquo;Chuva de Rosas&rdquo;, confia à &ldquo;Santinha de Lisieux&rdquo; as intenções do coração, no seu pequeno caminho de confiança e amor. Sua festa é em <strong>1º de outubro</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó Santa Teresinha do Menino Jesus,<br>que prometestes fazer descer do Céu uma chuva de rosas,<br>eu venho, confiante, pedir a vossa intercessão.<br>Ensinai-me o vosso pequeno caminho<br>de confiança e abandono nas mãos do Pai.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e dai-me a graça de amar a Deus nas pequenas coisas.<br>Santa Teresinha, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "1º de outubro",
+    "related": [
+      "oracao-santa-teresinha",
+      "novena-santa-rita"
+    ]
+  },
+  {
+    "slug": "novena-padre-pio",
+    "nome": "Novena a São Padre Pio",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Santo dos nossos dias",
+    "img": "padre-pio",
+    "sub": "Nove dias ao santo dos estigmas, conselheiro de almas.",
+    "intro": "<p>A <strong>Novena a São Padre Pio</strong> de Pietrelcina invoca o frade capuchinho que levou nos próprios corpos os estigmas de Cristo e passou a vida no confessionário, conduzindo almas a Deus. Sua festa é em <strong>23 de setembro</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó São Padre Pio,<br>que carregastes em vosso corpo as chagas de Cristo<br>e consolastes tantas almas aflitas,<br>intercedei por mim junto a Deus.<br>Ensinai-me a confiar na Providência,<br>a rezar com perseverança e a não ter medo.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>Lembrai-vos do vosso conselho: &ldquo;Reza, espera e não te preocupes.&rdquo;<br>São Padre Pio, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "23 de setembro",
+    "related": [
+      "novena-santa-rita",
+      "novena-sao-miguel"
+    ]
+  },
+  {
+    "slug": "novena-santa-edwiges",
+    "nome": "Novena a Santa Edwiges",
+    "grp": "Aos Santos e Anjos",
+    "cat": "Dos endividados e necessitados",
+    "img": "santa-edwiges",
+    "sub": "Nove dias à protetora dos endividados e dos que passam necessidade.",
+    "intro": "<p>A <strong>Novena a Santa Edwiges</strong> é rezada pelos que passam por dificuldades financeiras, dívidas e necessidades urgentes. Duquesa que distribuiu seus bens aos pobres, Santa Edwiges é a protetora dos endividados. Sua festa é em <strong>16 de outubro</strong>.</p>",
+    "como": "<p>Reze durante <strong>nove dias consecutivos</strong>. Em cada dia: faça o Sinal da Cruz, recolha-se em silêncio, apresente a sua intenção, reze a oração da novena abaixo e termine com um Pai-Nosso, uma Ave-Maria e um Glória ao Pai.</p>",
+    "oracao": "Ó gloriosa Santa Edwiges,<br>protetora dos pobres e dos endividados,<br>vós que repartistes os vossos bens com os necessitados,<br>intercedei por mim junto a Deus.<br>Socorrei-me nas minhas dificuldades<br>e alcançai-me o pão de cada dia e o trabalho digno.<br>Alcançai-me a graça que nesta novena vos peço<br><span class=\"peca\">(apresente a sua intenção)</span>e ensinai-me a confiar na Providência e a ser generoso.<br>Santa Edwiges, rogai por nós. Amém.",
+    "fecho": "Pai-Nosso, Ave-Maria e Glória ao Pai.",
+    "festa": "16 de outubro",
+    "related": [
+      "novena-santo-expedito",
+      "novena-sao-jose"
+    ]
+  }
+]

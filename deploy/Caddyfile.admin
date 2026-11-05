@@ -1,0 +1,4 @@
+# Painel admin — adicionar ao /etc/caddy/Caddyfile
+admin.encontrarastudo.com.br {
+    reverse_proxy 127.0.0.1:8001
+}

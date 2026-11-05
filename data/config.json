@@ -1,0 +1,27 @@
+{
+  "announce": {
+    "texto": "Novo guia gratuito: <strong>O Cat&oacute;lico que Defende a Vida</strong>",
+    "link": "guia.html",
+    "label": "baixe agora"
+  },
+  "cta_gratis": {
+    "kicker": "Guia gratuito",
+    "titulo": "O Cat&oacute;lico que Defende a Vida",
+    "texto": "Receba de gra&ccedil;a o guia com as 7 obje&ccedil;&otilde;es mais comuns sobre o aborto e como responder a cada uma &mdash; com f&eacute; e raz&atilde;o, cada resposta com a sua fonte.",
+    "botao": "Baixar gr&aacute;tis",
+    "link": "guia.html"
+  },
+  "cta_produto": {
+    "kicker": "Material recomendado",
+    "titulo": "Mapas Mentais da B&iacute;blia",
+    "texto": "73 mapas mentais que resumem a B&iacute;blia inteira, livro por livro &mdash; a ferramenta ideal para catequistas e para quem quer estudar a Palavra com clareza e memorizar o essencial.",
+    "preco": "R$ 39,90",
+    "botao": "Quero conhecer",
+    "link": "https://pay.cakto.com.br/C97rynN"
+  },
+  "newsletter_uuid": "244e15f1-3812-45ac-9172-e483c82b94da",
+  "listmonk_url": "https://lista.encontrarastudo.com.br",
+  "instagram": "https://instagram.com/encontrarastudo",
+  "youtube": "https://youtube.com/@encontrarastudo",
+  "email": "contato@encontrarastudo.com.br"
+}

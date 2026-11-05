@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Mapas Mentais da B&iacute;blia",
+    "desc": "73 mapas mentais que resumem a B&iacute;blia inteira, livro por livro. A ferramenta ideal para catequistas e para quem quer estudar e memorizar a Palavra com clareza.",
+    "link": "https://pay.cakto.com.br/C97rynN",
+    "preco": "R$ 39,90",
+    "cor": "c1",
+    "badge": "Mais procurado",
+    "img": "mapas-mentais",
+    "tags": ["biblia", "biblico", "escritura", "palavra", "evangelho", "livro", "testamento", "salmo", "profeta", "apostolo", "estudo", "memoriz", "doutrina", "sacramento"]
+  },
+  {
+    "nome": "Encontro Pronto",
+    "desc": "Encontros de catequese prontos para aplicar: roteiros completos para voc&ecirc; conduzir com seguran&ccedil;a, sem passar horas preparando cada reuni&atilde;o.",
+    "link": "https://pay.cakto.com.br/38eq248",
+    "preco": "R$ 39,90",
+    "cor": "c3",
+    "badge": "",
+    "img": "encontro-pronto",
+    "tags": ["encontro", "catequese", "catequista", "roteiro", "reuniao", "preparar", "aula", "grupo", "semana", "catecumen", "formacao"]
+  },
+  {
+    "nome": "Atividades B&iacute;blicas para Crian&ccedil;as",
+    "desc": "Material b&iacute;blico l&uacute;dico para evangelizar os pequenos: atividades para a catequese infantil, a escola e a fam&iacute;lia.",
+    "link": "https://pay.cakto.com.br/CgMhjmk",
+    "preco": "R$ 24,90",
+    "cor": "c2",
+    "badge": "",
+    "img": "atividades-criancas",
+    "tags": ["crianca", "infantil", "kids", "pequenos", "escola", "familia", "filho", "ludic", "brincar", "colorir", "atividade"]
+  },
+  {
+    "nome": "Aplicativo Didake",
+    "desc": "O aplicativo para catequistas: ferramentas e conte&uacute;dos para organizar e enriquecer a sua miss&atilde;o de ensinar a f&eacute;.",
+    "link": "https://didake.app/",
+    "preco": "",
+    "cor": "c4",
+    "badge": "",
+    "img": "didake",
+    "tags": ["app", "aplicativo", "ferramenta", "organizar", "tecnologia", "celular"]
+  }
+]
