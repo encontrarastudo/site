@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# Puxa o repositório e republica o site só quando há commit novo.
+# Puxa o repo e republica o site quando há commit novo (ou com 'force').
 set -e
 cd "$(dirname "$0")"
-VENV=/opt/encontrarastudo-admin/venv/bin/python
 WWW=/var/www/encontrarastudo
+build(){
+  cp -r assets/* "$WWW/assets/"
+  ET_OUT_DIR="$WWW" ET_DATA_DIR="$(pwd)/data" python3 build_oracoes.py >/dev/null
+  cp index.html "$WWW/"
+  chmod -R a+rX "$WWW"
+  echo "[deploy] publicado $(date -u +%FT%TZ)"
+}
 before=$(git rev-parse HEAD 2>/dev/null || echo none)
-git pull --ff-only -q || exit 0
-after=$(git rev-parse HEAD)
-[ "$before" = "$after" ] && exit 0
-echo "[deploy] mudanca detectada: $before -> $after"
-cp -r assets/* "$WWW/assets/"
-ET_OUT_DIR="$WWW" ET_DATA_DIR="$(pwd)/data" "$VENV" build_oracoes.py
-cp index.html "$WWW/"
-chmod -R a+rX "$WWW"
-echo "[deploy] publicado em $(date)"
+git pull --ff-only -q || true
+after=$(git rev-parse HEAD 2>/dev/null || echo none)
+if [ "$1" = "force" ] || [ "$before" != "$after" ] || [ ! -f "$WWW/index.html" ]; then build; else echo "[deploy] sem mudanca"; fi
