@@ -3,45 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark">
+<meta name="color-scheme" content="dark light">
+<meta name="supported-color-schemes" content="dark light">
 <style>
-  :root{ color-scheme: light dark; supported-color-schemes: light dark; }
-  body{ margin:0; padding:0; background:#cdbfa6; }
+  :root{ color-scheme: dark light; supported-color-schemes: dark light; }
+  body{ margin:0; padding:0; background:#0f0d13; }
   a{ text-decoration:none; }
-  /* reafirma as cores da marca quando o cliente está em modo escuro */
-  @media (prefers-color-scheme: dark){
-    .et-outer{ background:#cdbfa6 !important; }
-    .et-card{ background:#fdf8ee !important; }
-    .et-head{ background:#681f35 !important; }
-    .et-content{ background:#fdf8ee !important; color:#2c2430 !important; }
-    .et-content p{ color:#2c2430 !important; }
-    .et-content i{ color:#2c2430 !important; }
-    .et-foot{ background:#211c26 !important; }
-    .et-eyebrow{ color:#9d4058 !important; }
-    .et-h1{ color:#681f35 !important; }
-    .et-sign{ color:#6a5b60 !important; }
-  }
-  u + .body .et-card{ background:#fdf8ee; }
 </style>
 </head>
-<body class="body et-outer" style="margin:0;padding:0;background:#cdbfa6;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="et-outer" style="background:#cdbfa6;border-collapse:collapse"><tr><td align="center" style="padding:0">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" class="et-card" style="width:600px;max-width:600px;background:#fdf8ee;border-collapse:collapse;margin:0 auto;font-family:Helvetica,Arial,sans-serif">
-  <tr><td class="et-head" style="background:#681f35;padding:28px 0 24px;text-align:center">
+<body style="margin:0;padding:0;background:#0f0d13;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0d13;border-collapse:collapse"><tr><td align="center" style="padding:0">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#221c29;border-collapse:collapse;margin:0 auto;font-family:Helvetica,Arial,sans-serif">
+  <tr><td style="background:#681f35;padding:28px 0 24px;text-align:center">
     <img src="https://encontrarastudo.com.br/assets/emblem-gold.png" width="44" height="47" alt="Encontrarás Tudo" style="display:inline-block">
     <div style="font-family:Georgia,serif;color:#f1e3cf;font-size:20px;letter-spacing:.5px;margin-top:8px;font-weight:bold">Encontrarás Tudo</div>
     <div style="color:#ecd6ad;font-family:Georgia,serif;font-size:13px;font-style:italic;line-height:1.55;max-width:430px;margin:12px auto 0;padding:0 24px">Se no amor tu me procurares a mim somente, não encontrarás nada; mas se através de mim procurares Deus, <b style="color:#e2c88d">encontrarás tudo</b>.</div>
     <div style="color:#c7a56b;font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-top:9px">&mdash; Beato Fulton Sheen</div>
   </td></tr>
-  <tr><td style="height:4px;background:#c7a56b;background:linear-gradient(90deg,#681f35,#c7a56b)"></td></tr>
-  <tr><td class="et-content" style="padding:32px 40px 24px;color:#2c2430;font-size:16px;line-height:1.7;background:#fdf8ee">
+  <tr><td style="height:4px;background:#c7a56b;background:linear-gradient(90deg,#9d4058,#c7a56b)"></td></tr>
+  <tr><td style="padding:34px 40px 24px;color:#e3d7c4;font-size:16px;line-height:1.7;background:#221c29">
     {{ template "content" . }}
   </td></tr>
-  <tr><td class="et-foot" style="background:#211c26;padding:24px 40px;text-align:center">
+  <tr><td style="background:#15121a;padding:24px 40px;text-align:center">
     <div style="color:#c7a56b;font-family:Georgia,serif;font-size:15px;font-style:italic">&ldquo;Buscai, e encontrareis.&rdquo;</div>
-    <div style="color:#8a7d84;font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-top:4px">Mateus 7,7</div>
-    <div style="margin-top:16px;color:#b3a6ac;font-size:12px;line-height:1.6">
+    <div style="color:#7a6e74;font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-top:4px">Mateus 7,7</div>
+    <div style="margin-top:16px;color:#8f8389;font-size:12px;line-height:1.6">
       Você recebe este e-mail porque se inscreveu no Encontrarás Tudo.<br>
       <a href="https://instagram.com/encontrarastudo" style="color:#c7a56b;text-decoration:none">@encontrarastudo</a> &nbsp;&middot;&nbsp;
       <a href="{{ UnsubscribeURL }}" style="color:#c7a56b;text-decoration:none">cancelar inscrição</a>
