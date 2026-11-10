@@ -172,6 +172,38 @@ def cta_html(spec, emblem):
             "</div></div>") % (emblem, c.get("titulo","Gostou?"), c.get("sub",""), c.get("chip","Link na bio"))
     return _wrap(body, W, H)
 
+def story_text_html(sl, idx, total, emblem):
+    W,H = 1080,1920
+    body = ("<div class='card'>"
+            "<div class='grid'></div>"
+            "<div class='halo' style='top:-120px;width:620px;height:620px;opacity:.5'></div>"
+            "<div style='position:absolute;top:150px;left:88px;z-index:3'>"
+            "<div class='cnum' style='font-size:140px'>%s</div></div>"
+            "<div style='position:absolute;top:470px;left:88px;right:88px;z-index:3'>"
+            "<div class='ctitle' style='font-size:84px'>%s</div>"
+            "<hr class='goldrule' style='margin:36px 0 40px'>"
+            "<div class='cbody' style='font-size:46px;line-height:1.5'>%s</div>%s</div>"
+            "<div style='position:absolute;left:88px;right:88px;bottom:90px;z-index:3;display:flex;justify-content:space-between;align-items:center'>"
+            "<span class='cfonte' style='font-size:26px'>@encontrarastudo</span>"
+            "<span class='cfonte' style='font-size:26px'>%s/%s</span></div></div>") % (
+            sl.get("n","1"), sl.get("titulo",""), sl.get("corpo",""),
+            ("<div class='cfonte' style='font-size:28px;margin-top:40px'>%s</div>" % sl["fonte"]) if sl.get("fonte") else "",
+            str(idx), str(total))
+    return _wrap(body, W, H)
+
+def story_link_html(spec, emblem):
+    W,H = 1080,1920
+    c = spec.get("cta", {})
+    body = ("<div class='card'>"
+            "<div class='grid'></div><div class='halo' style='top:420px;width:560px;height:560px'></div>"
+            "<div style='position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 110px'>"
+            "<img src='%s' style='width:130px;margin-bottom:46px'>"
+            "<div class='h1' style='font-size:104px;margin-bottom:30px'>%s</div>"
+            "<p class='sub' style='font-size:44px;line-height:1.4;max-width:880px;margin-bottom:60px'>%s</p>"
+            "<div class='arrow' style='font-size:40px'>%s</div></div></div>") % (
+            emblem, c.get("titulo","Leia no blog"), c.get("sub",""), c.get("chip","Arraste pra cima ↑"))
+    return _wrap(body, W, H)
+
 def render(html, w, h, out):
     from playwright.sync_api import sync_playwright
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
@@ -200,6 +232,12 @@ def main():
         o=os.path.join(a.out,"%s-post.png"%slug); render(cover_html(spec,img,emblem,"post"),1080,1350,o); outs.append(o)
     elif fmt=="story":
         o=os.path.join(a.out,"%s-story.png"%slug); render(cover_html(spec,img,emblem,"story"),1080,1920,o); outs.append(o)
+    elif fmt=="stories":
+        slides=spec.get("slides",[]); total=1+len(slides)+1
+        o=os.path.join(a.out,"%s-story-01.png"%slug); render(cover_html(spec,img,emblem,"story"),1080,1920,o); outs.append(o)
+        for i,sl in enumerate(slides):
+            o=os.path.join(a.out,"%s-story-%02d.png"%(slug,i+2)); render(story_text_html(sl,i+2,total,emblem),1080,1920,o); outs.append(o)
+        o=os.path.join(a.out,"%s-story-%02d.png"%(slug,total)); render(story_link_html(spec,emblem),1080,1920,o); outs.append(o)
     elif fmt=="carrossel":
         slides=spec.get("slides",[]); total=1+len(slides)+1
         o=os.path.join(a.out,"%s-01-capa.png"%slug); render(cover_html(spec,img,emblem,"carrossel_cover"),1080,1350,o); outs.append(o)
