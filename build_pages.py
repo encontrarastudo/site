@@ -551,4 +551,77 @@ contato_body = phero("Contato", "Fale comigo", "D&uacute;vidas, pedidos de ora&c
 page("contato.html", "Contato &mdash; Encontrar&aacute;s Tudo",
      "Fale com o Encontrar&aacute;s Tudo: Instagram, e-mail e YouTube.", "contato", contato_body)
 
+# ============ HOME dinâmica (recomendados + destaques a partir de artigos.json) ============
+def _cat_of(a):
+    return a.get("categoria") or ((a.get("tags") or [""])[0]) or ""
+
+def _artdate(a):
+    return a.get("data", "") or ""
+
+def home_card(a):
+    img = "assets/img/%s.webp" % a.get("img", "eucaristia")
+    cat = _cat_of(a)
+    if a.get("status") == "publicado":
+        return ('<a class="post live reveal" href="%s.html">'
+                '<div class="cover has-img"><img class="thumb" src="%s" alt="" loading="lazy"><span class="cat">%s</span></div>'
+                '<div class="pbody"><h3>%s</h3><p class="ex">%s</p>'
+                '<div class="meta"><span class="d">%s</span><span>Ler &rarr;</span></div></div></a>'
+                % (a["slug"], img, cat, a["titulo"], a.get("resumo", ""), a.get("data_br", "")))
+    return ('<div class="post reveal">'
+            '<div class="cover has-img"><img class="thumb" src="%s" alt="" loading="lazy"><span class="cat">%s</span></div>'
+            '<div class="pbody"><h3>%s</h3><p class="ex">%s</p>'
+            '<div class="meta"><span>Em prepara&ccedil;&atilde;o</span><span class="soon">Em breve</span></div></div></div>'
+            % (img, cat, a["titulo"], a.get("resumo", "")))
+
+def pick_destaques():
+    pub = sorted([a for a in ARTIGOS if a.get("status") == "publicado"], key=_artdate, reverse=True)
+    flagged = [a for a in ARTIGOS if a.get("destaque") and a.get("status") == "publicado"]
+    dest = flagged or pub[:2]   # sem flag, os 2 mais novos viram destaque
+    return dest[:5]
+
+def home_recomendados(exclude=(), n=6):
+    ex = set(exclude)
+    pub = sorted([a for a in ARTIGOS if a.get("status") == "publicado" and a["slug"] not in ex],
+                 key=_artdate, reverse=True)
+    soon = [a for a in ARTIGOS if a.get("status") != "publicado" and a["slug"] not in ex]
+    return "\n".join(home_card(a) for a in (pub + soon)[:n])
+
+def home_destaques(dest):
+    if not dest:
+        return ""
+    slides = "".join(
+        ('<a class="dest-slide" href="%s.html" style="background-image:url(assets/img/%s.webp)">'
+         '<div class="dest-ov"></div><div class="dest-tx"><span class="cat">%s</span>'
+         '<h3>%s</h3><p>%s</p><span class="go">Ler o artigo &rarr;</span></div></a>')
+        % (a["slug"], a.get("img", "eucaristia"), _cat_of(a), a["titulo"], a.get("resumo", ""))
+        for a in dest)
+    dots = "".join('<button class="dest-dot%s" data-i="%d" aria-label="destaque %d"></button>'
+                   % (' on' if i == 0 else '', i, i + 1) for i in range(len(dest)))
+    js = ("<script>(function(){var t=document.getElementById('destTrack');if(!t)return;"
+          "var s=t.children,d=document.querySelectorAll('.dest-dot'),i=0,n=s.length;"
+          "function go(k){i=(k+n)%n;t.scrollTo({left:s[i].offsetLeft-t.offsetLeft,behavior:'smooth'});"
+          "d.forEach(function(x,j){x.classList.toggle('on',j===i)});}"
+          "d.forEach(function(x){x.addEventListener('click',function(){go(+x.dataset.i)})});"
+          "var tm=setInterval(function(){go(i+1)},5500);"
+          "t.addEventListener('pointerdown',function(){clearInterval(tm)});})();</script>")
+    return ('<section class="section light dest-sec"><div class="wrap">'
+            '<div class="section-head reveal"><div><p class="eyebrow">Em destaque</p>'
+            '<h2>Destaques da semana</h2></div><a class="more" href="blog.html">Ver todos &rarr;</a></div>'
+            '<div class="dest-track" id="destTrack">%s</div><div class="dest-dots">%s</div></div>%s</section>'
+            % (slides, dots, js))
+
+def build_index():
+    src = open(os.path.join(SRC, "index.html"), encoding="utf-8").read()
+    dest = pick_destaques()
+    dest_slugs = [a["slug"] for a in dest]
+    src = _re.sub(r'(<section class="section light" id="artigos">.*?<div class="grid">).*?(</div>\s*</div>\s*</section>)',
+                  lambda m: m.group(1) + "\n" + home_recomendados(exclude=dest_slugs) + "\n    " + m.group(2),
+                  src, count=1, flags=_re.S)
+    src = src.replace('<section class="section light" id="artigos">',
+                      home_destaques(dest) + '\n\n<section class="section light" id="artigos">', 1)
+    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
+        f.write(src)
+    print("wrote index.html (home dinâmica)")
+
+build_index()
 print("OK")

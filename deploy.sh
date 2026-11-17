@@ -7,7 +7,6 @@ build(){
   cp -r assets/* "$WWW/assets/"
   ET_OUT_DIR="$WWW" ET_DATA_DIR="$(pwd)/data" python3 build_pages.py >/dev/null
   ET_OUT_DIR="$WWW" ET_DATA_DIR="$(pwd)/data" python3 build_oracoes.py >/dev/null
-  cp index.html "$WWW/"
   chmod -R a+rX "$WWW"
   echo "[deploy] publicado $(date -u +%FT%TZ)"
 }
