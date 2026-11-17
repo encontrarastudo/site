@@ -4,6 +4,9 @@ set -e
 cd "$(dirname "$0")"
 WWW=/var/www/encontrarastudo
 build(){
+  # index.html é GERADO por build_pages.py (home dinâmica: recomendados +
+  # carrossel de destaques a partir de data/artigos.json). Não copiar o
+  # index.html do repositório — ele é apenas o template de entrada do build.
   cp -r assets/* "$WWW/assets/"
   ET_OUT_DIR="$WWW" ET_DATA_DIR="$(pwd)/data" python3 build_pages.py >/dev/null
   ET_OUT_DIR="$WWW" ET_DATA_DIR="$(pwd)/data" python3 build_oracoes.py >/dev/null
