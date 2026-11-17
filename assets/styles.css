@@ -192,7 +192,7 @@ body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-in
 .article .art-cover{width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:14px; margin:1.9rem 0 .2rem}
 .article .body{font-size:1.14rem; line-height:1.8; padding-top:1.8rem}
 .article .body p{margin:0 0 1.5rem}
-.article .body p:first-of-type::first-letter{font-family:var(--font-display); font-weight:800; float:left; font-size:3.8rem; line-height:.82; padding:.3rem .55rem 0 0; color:var(--red)}
+.article .body > p:first-of-type::first-letter{font-family:var(--font-display); font-weight:800; float:left; font-size:3.8rem; line-height:.82; padding:.3rem .55rem 0 0; color:var(--red)}
 .article .body h2{font-size:1.7rem; margin:2.6rem 0 1rem; text-wrap:balance}
 .article .body em{font-style:italic}
 .article .body strong{font-weight:700}
