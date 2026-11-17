@@ -223,6 +223,23 @@ def prod_cta(p):
             '<a class="btn btn-gold" href="%s"%s>Quero conhecer <span class="chev">&rarr;</span></a></aside>'
             % (thumb, p["nome"], p.get("desc",""), preco, p.get("link","#"), ext))
 
+def nl_banner():
+    """Banner discreto de newsletter (quando nenhum material casa com o tema)."""
+    return ('<aside class="isca-banner"><div class="txt">'
+            '<p class="k">Gratuito</p><p class="t">Receba os conteúdos no seu e-mail</p>'
+            '<p class="s">Formação católica toda semana — com fé e profundidade.</p></div>'
+            '<a class="btn" href="index.html#newsletter">Quero receber <span class="chev">&rarr;</span></a></aside>')
+
+def insert_late(body_html, bloco):
+    """Insere um bloco perto do fim (após o penúltimo parágrafo, antes das fontes)."""
+    if not bloco:
+        return body_html
+    ends = [m.end() for m in _re.finditer(r"</p>", body_html)]
+    if len(ends) < 3:
+        return body_html + "\n" + bloco
+    pos = ends[max(0, len(ends) - 2)]
+    return body_html[:pos] + "\n" + bloco + "\n" + body_html[pos:]
+
 def insert_mid(body_html, bloco):
     """Insere um bloco após o parágrafo central do artigo (ou usa [[PRODUTO]])."""
     if not bloco:
@@ -250,7 +267,7 @@ def best_material(a):
         s = sum(text.count(_norm(k)) for k in m.get("tags", []))
         if s > score:
             best, score = m, s
-    return best   # None quando o assunto não casa com nenhum material
+    return best if score >= 2 else None   # só casa com forte relação; senão, nada (vira newsletter)
 
 def insert_early(body_html, bloco):
     """Insere um bloco logo após o 2º parágrafo (bom para captura de isca)."""
@@ -271,17 +288,20 @@ def render_artigo(a, fname=None):
     prod = best_product(a)
     mat = best_material(a)
     body_html = (a.get("body","") or "")
+    # Material grátis só se casar com o tema; senão, convite de newsletter (nunca material fora do assunto).
+    isca_banner = cta_inline(mat) if mat else nl_banner()
     if "[[CTA]]" in body_html:
-        body_html = body_html.replace("[[CTA]]", cta_inline(mat))   # isca onde o autor marcou
-    elif mat:
-        body_html = insert_early(body_html, cta_inline(mat))        # tema casou: isca no início
-    body_html = insert_mid(body_html, prod_cta(prod))   # 1 produto no meio, o mais relevante
+        body_html = body_html.replace("[[CTA]]", isca_banner)       # grátis, mais cedo no texto
+    else:
+        body_html = insert_early(body_html, isca_banner)
+    body_html = insert_late(body_html, prod_cta(prod))   # produto, separado, perto do fim
     byline = ('<p class="art-byline">Por <a href="sobre.html">%s</a> &middot; <time datetime="%s">%s</time></p>'
               % (a.get("autor","Gustavo Souza"), a.get("data",""), a.get("data_br","")))
     body = ('<article class="article wrap"><div class="tags">%s</div><h1>%s</h1>'
             '<p class="dek">%s</p>%s<p class="art-meta">%s</p>'
-            '<div class="body">%s\n%s</div></article>'
-            % (tags, a["titulo"], a.get("dek",""), byline, meta_line, body_html, cta_block(prod)))
+            '<img class="art-cover" src="%s" alt="" loading="eager">'
+            '<div class="body">%s</div></article>'
+            % (tags, a["titulo"], a.get("dek",""), byline, meta_line, img, body_html))
     jd = article_jsonld(a, canon, img)
     page(fname, _txt(a["titulo"]) + " — Encontrarás Tudo", _txt(a.get("dek","")), "blog", body, jd, og_image=img)
 
