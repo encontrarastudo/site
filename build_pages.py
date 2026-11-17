@@ -586,39 +586,42 @@ def home_recomendados(exclude=(), n=6):
     soon = [a for a in ARTIGOS if a.get("status") != "publicado" and a["slug"] not in ex]
     return "\n".join(home_card(a) for a in (pub + soon)[:n])
 
-def home_destaques(dest):
-    if not dest:
-        return ""
-    slides = "".join(
-        ('<a class="dest-slide" href="%s.html" style="background-image:url(assets/img/%s.webp)">'
-         '<div class="dest-ov"></div><div class="dest-tx"><span class="cat">%s</span>'
-         '<h3>%s</h3><p>%s</p><span class="go">Ler o artigo &rarr;</span></div></a>')
+def hero_slides(dest):
+    """Slides de artigo que entram na hero, alternando com a tela da marca."""
+    return "".join(
+        ('<a class="hslide hslide-art" href="%s.html">'
+         '<div class="ha-img" style="background-image:url(assets/img/%s.webp)"></div>'
+         '<div class="ha-tx"><span class="ha-cat">%s</span><h2>%s</h2>'
+         '<p>%s</p><span class="ha-go">Ler o artigo &rarr;</span></div></a>')
         % (a["slug"], a.get("img", "eucaristia"), _cat_of(a), a["titulo"], a.get("resumo", ""))
         for a in dest)
-    dots = "".join('<button class="dest-dot%s" data-i="%d" aria-label="destaque %d"></button>'
-                   % (' on' if i == 0 else '', i, i + 1) for i in range(len(dest)))
-    js = ("<script>(function(){var t=document.getElementById('destTrack');if(!t)return;"
-          "var s=t.children,d=document.querySelectorAll('.dest-dot'),i=0,n=s.length;"
-          "function go(k){i=(k+n)%n;t.scrollTo({left:s[i].offsetLeft-t.offsetLeft,behavior:'smooth'});"
-          "d.forEach(function(x,j){x.classList.toggle('on',j===i)});}"
-          "d.forEach(function(x){x.addEventListener('click',function(){go(+x.dataset.i)})});"
-          "var tm=setInterval(function(){go(i+1)},5500);"
-          "t.addEventListener('pointerdown',function(){clearInterval(tm)});})();</script>")
-    return ('<section class="section light dest-sec"><div class="wrap">'
-            '<div class="section-head reveal"><div><p class="eyebrow">Em destaque</p>'
-            '<h2>Destaques da semana</h2></div><a class="more" href="blog.html">Ver todos &rarr;</a></div>'
-            '<div class="dest-track" id="destTrack">%s</div><div class="dest-dots">%s</div></div>%s</section>'
-            % (slides, dots, js))
+
+def hero_dots(n):
+    """Bolinhas + script de rotação da hero (inclui a tela da marca, por isso n+1)."""
+    total = n + 1
+    dots = "".join('<button class="hero-dot%s" data-i="%d" aria-label="slide %d"></button>'
+                   % (' on' if i == 0 else '', i, i + 1) for i in range(total))
+    js = ("<script>(function(){var dk=document.getElementById('heroDeck');if(!dk)return;"
+          "var s=dk.querySelectorAll('.hslide'),d=document.querySelectorAll('.hero-dot'),i=0,n=s.length;"
+          "if(n<2){var dd=document.querySelector('.hero-dots');if(dd)dd.style.display='none';return;}"
+          "function go(k){i=(k+n)%n;for(var j=0;j<n;j++){s[j].classList.toggle('is-on',j===i);"
+          "if(d[j])d[j].classList.toggle('on',j===i);}}"
+          "for(var j=0;j<d.length;j++){(function(b){b.addEventListener('click',function(){go(+b.dataset.i);rt();})})(d[j]);}"
+          "var tm;function rt(){clearInterval(tm);tm=setInterval(function(){go(i+1)},6000);}rt();"
+          "dk.addEventListener('pointerdown',rt);})();</script>")
+    return '<div class="hero-dots">%s</div>%s' % (dots, js)
 
 def build_index():
     src = open(os.path.join(SRC, "index.html"), encoding="utf-8").read()
     dest = pick_destaques()
     dest_slugs = [a["slug"] for a in dest]
+    # Recomendados dinâmicos (exclui os que estão em destaque na hero)
     src = _re.sub(r'(<section class="section light" id="artigos">.*?<div class="grid">).*?(</div>\s*</div>\s*</section>)',
                   lambda m: m.group(1) + "\n" + home_recomendados(exclude=dest_slugs) + "\n    " + m.group(2),
                   src, count=1, flags=_re.S)
-    src = src.replace('<section class="section light" id="artigos">',
-                      home_destaques(dest) + '\n\n<section class="section light" id="artigos">', 1)
+    # Hero slideshow: tela da marca alternando com os artigos em destaque
+    src = src.replace("<!--HERO_SLIDES-->", hero_slides(dest), 1)
+    src = src.replace("<!--HERO_DOTS-->", hero_dots(len(dest)) if dest else "", 1)
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
         f.write(src)
     print("wrote index.html (home dinâmica)")

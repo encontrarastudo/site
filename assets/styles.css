@@ -412,18 +412,29 @@ html.js .reveal.in{opacity:1; transform:none; transition:opacity .7s ease, trans
 .cover.prod{aspect-ratio:1/1}
 .cover.prod img.thumb{object-fit:cover}
 
-/* ===== Home: carrossel de destaques ===== */
-.dest-sec{padding-bottom:1.2rem}
-.dest-track{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:.3rem}
-.dest-track::-webkit-scrollbar{display:none}
-.dest-slide{position:relative;flex:0 0 100%;scroll-snap-align:start;min-height:340px;border-radius:16px;overflow:hidden;display:flex;align-items:flex-end;background-size:cover;background-position:center;text-decoration:none;box-shadow:0 10px 30px rgba(33,28,38,.12)}
-@media(min-width:760px){.dest-slide{flex-basis:calc(50% - .6rem);min-height:380px}}
-.dest-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,19,28,.05) 35%,rgba(23,19,28,.88))}
-.dest-tx{position:relative;z-index:2;padding:1.6rem 1.8rem;color:#fff}
-.dest-tx .cat{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;background:var(--gold);color:#2a1b20;padding:.22rem .6rem;border-radius:6px}
-.dest-tx h3{font-family:var(--font-display);font-weight:700;font-size:1.5rem;line-height:1.14;margin:.7rem 0 .45rem;color:#fff}
-.dest-tx p{font-size:.98rem;line-height:1.5;color:rgba(255,255,255,.86);margin:0 0 .6rem;max-width:42ch}
-.dest-tx .go{font-family:var(--font-display);font-weight:700;font-size:.88rem;color:var(--gold-bright)}
-.dest-dots{display:flex;gap:.5rem;justify-content:center;margin-top:1.1rem}
-.dest-dot{width:9px;height:9px;padding:0;border-radius:50%;border:0;background:var(--rule);cursor:pointer;transition:all .25s}
-.dest-dot.on{background:var(--red);width:22px;border-radius:5px}
+/* ===== Hero slideshow (marca alternando com artigos em destaque) ===== */
+.hero-deck{position:relative; display:grid; min-height:clamp(340px,46vh,440px)}
+.hslide{grid-area:1/1; opacity:0; visibility:hidden; transition:opacity .7s ease; pointer-events:none;
+  display:flex; flex-direction:column; justify-content:center; align-items:center}
+.hslide.is-on{opacity:1; visibility:visible; pointer-events:auto}
+.hslide-brand{text-align:center}
+/* slide de artigo: imagem num canto + título e chamada ao lado */
+.hslide-art{flex-direction:column; gap:1.5rem; text-decoration:none; width:100%; max-width:60rem; margin:0 auto; text-align:left}
+.hslide-art .ha-img{width:100%; aspect-ratio:16/9; border-radius:16px; background-size:cover; background-position:center;
+  box-shadow:0 14px 40px rgba(0,0,0,.4); flex:0 0 auto}
+.hslide-art .ha-tx{color:#fff; width:100%}
+.ha-cat{display:inline-block; font-family:var(--font-display); font-weight:700; font-size:.66rem; letter-spacing:.16em;
+  text-transform:uppercase; background:var(--gold); color:#2a1b20; padding:.24rem .7rem; border-radius:6px}
+.hslide-art h2{font-family:var(--font-display); font-weight:800; color:#fff; line-height:1.08;
+  font-size:clamp(1.6rem,3.4vw,2.5rem); margin:.9rem 0 .5rem; text-wrap:balance}
+.hslide-art .ha-tx p{color:var(--cream-soft); font-size:1.05rem; line-height:1.5; margin:0 0 .8rem; max-width:46ch}
+.hslide-art .ha-go{font-family:var(--font-display); font-weight:700; color:var(--gold-bright); font-size:.98rem}
+.hslide-art:hover .ha-go{color:#fff}
+@media(min-width:760px){
+  .hslide-art{flex-direction:row; align-items:center; gap:2.6rem}
+  .hslide-art .ha-img{flex:0 0 44%; aspect-ratio:4/3}
+  .hslide-art .ha-tx{flex:1 1 auto}
+}
+.hero-dots{display:flex; gap:.5rem; justify-content:center; margin-top:1.8rem; position:relative; z-index:2}
+.hero-dot{width:9px; height:9px; padding:0; border-radius:50%; border:0; background:rgba(255,255,255,.3); cursor:pointer; transition:all .25s}
+.hero-dot.on{background:var(--gold-bright); width:22px; border-radius:5px}
