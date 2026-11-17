@@ -581,9 +581,12 @@ def pick_destaques():
 
 def home_recomendados(exclude=(), n=6):
     ex = set(exclude)
-    pub = sorted([a for a in ARTIGOS if a.get("status") == "publicado" and a["slug"] not in ex],
-                 key=_artdate, reverse=True)
-    soon = [a for a in ARTIGOS if a.get("status") != "publicado" and a["slug"] not in ex]
+    pub_all = sorted([a for a in ARTIGOS if a.get("status") == "publicado"], key=_artdate, reverse=True)
+    pub_excl = [a for a in pub_all if a["slug"] not in ex]
+    # Só esconde os que estão na hero se ainda sobrarem publicados suficientes
+    # para encher a grade; senão, mostra todos os recentes (recentes > distinção).
+    pub = pub_excl if len(pub_excl) >= n else pub_all
+    soon = [a for a in ARTIGOS if a.get("status") != "publicado"]
     return "\n".join(home_card(a) for a in (pub + soon)[:n])
 
 def hero_slides(dest):
