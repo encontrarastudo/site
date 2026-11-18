@@ -102,15 +102,16 @@ def cover_html(spec, img, emblem, mode):
         ("<span class='g'>%s</span>" % w) if i==gi else w for i,w in enumerate(t))
     if mode == "story":
         W,H = 1080,1920
-        head = ("<div style='position:absolute;top:150px;left:0;right:0;text-align:center;z-index:2'>"
+        # zonas seguras do story IG: ~230px no topo (avatar/nome) e ~320px na base (barra de resposta)
+        head = ("<div style='position:absolute;top:232px;left:0;right:0;text-align:center;z-index:2'>"
                 "<div class='kicker' style='font-size:31px;margin-bottom:14px'>%s</div>"
-                "<div class='h1' style='font-size:196px'>%s</div></div>") % (c.get("kicker",""), title)
-        halo = "<div class='halo' style='top:560px;width:620px;height:620px'></div>"
-        statue = "<div class='statue' style='top:560px;width:1000px;height:1200px;background-image:url(%s)'></div>" % img
-        bottom = ("<div style='position:absolute;left:70px;right:70px;bottom:90px;z-index:7;text-align:center'>"
+                "<div class='h1' style='font-size:188px'>%s</div></div>") % (c.get("kicker",""), title)
+        halo = "<div class='halo' style='top:660px;width:620px;height:620px'></div>"
+        statue = "<div class='statue' style='top:660px;width:1000px;height:1160px;background-image:url(%s)'></div>" % img
+        bottom = ("<div style='position:absolute;left:70px;right:70px;bottom:320px;z-index:7;text-align:center'>"
                   "<p class='sub' style='font-size:38px;line-height:1.34;max-width:940px;margin-bottom:30px'>%s</p>"
                   "<div class='arrow' style='font-size:30px'>%s</div></div>") % (c.get("sub",""), c.get("cta","Veja no feed"))
-        scrim = "<div class='scrim' style='height:720px'></div>"
+        scrim = "<div class='scrim' style='height:900px'></div>"
         inner = ("<div class='card'><div class='grid'></div>%s%s%s<div class='vignette'></div>%s%s</div>"
                  % (halo, head, statue, scrim, bottom))
         return _wrap(inner, W, H)
@@ -177,13 +178,13 @@ def story_text_html(sl, idx, total, emblem):
     body = ("<div class='card'>"
             "<div class='grid'></div>"
             "<div class='halo' style='top:-120px;width:620px;height:620px;opacity:.5'></div>"
-            "<div style='position:absolute;top:150px;left:88px;z-index:3'>"
+            "<div style='position:absolute;top:252px;left:88px;z-index:3'>"
             "<div class='cnum' style='font-size:140px'>%s</div></div>"
-            "<div style='position:absolute;top:470px;left:88px;right:88px;z-index:3'>"
+            "<div style='position:absolute;top:520px;left:88px;right:88px;z-index:3'>"
             "<div class='ctitle' style='font-size:84px'>%s</div>"
             "<hr class='goldrule' style='margin:36px 0 40px'>"
             "<div class='cbody' style='font-size:46px;line-height:1.5'>%s</div>%s</div>"
-            "<div style='position:absolute;left:88px;right:88px;bottom:90px;z-index:3;display:flex;justify-content:space-between;align-items:center'>"
+            "<div style='position:absolute;left:88px;right:88px;bottom:300px;z-index:3;display:flex;justify-content:space-between;align-items:center'>"
             "<span class='cfonte' style='font-size:26px'>@encontrarastudo</span>"
             "<span class='cfonte' style='font-size:26px'>%s/%s</span></div></div>") % (
             sl.get("n","1"), sl.get("titulo",""), sl.get("corpo",""),
