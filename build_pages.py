@@ -165,9 +165,36 @@ def _txt(s):
     s = _re.sub(r"<[^>]+>", " ", s or ""); s = _htmlmod.unescape(s)
     return _re.sub(r"\s+", " ", s).strip()
 
+# Ponto de foco do corte das imagens (object-position / background-position).
+# Arte sacra é vertical e o rosto fica no topo; o corte central cortaria o rosto.
+# Chave = nome do arquivo em assets/img (sem .webp). Puxa o foco para o alto.
+IMG_FOCO = {
+    "imaculada": "50% 12%",
+    "divina-misericordia": "50% 12%",
+    "cristo-rei": "50% 15%",
+    "sagrado-coracao": "50% 15%",
+    "sao-jose": "50% 15%",
+    "perpetuo-socorro": "50% 18%",
+    "purgatorio": "50% 28%",
+    "crucifixo": "50% 22%",
+    "eucaristia": "50% 42%",
+    "eucaristia-altar": "50% 42%",
+    "candle-rosario": "50% 45%",
+    "sangue-calice": "50% 45%",
+    "5-doutrinas": "50% 42%",
+}
+FOCO_DEFAULT = "50% 26%"   # padrão seguro: favorece o alto (onde quase sempre está o rosto)
+def foco(a):
+    """Recebe o dict do artigo ou o nome da imagem; devolve o object-position."""
+    if isinstance(a, dict):
+        if a.get("foco"):
+            return a["foco"]
+        a = a.get("img", "eucaristia")
+    return IMG_FOCO.get(a, FOCO_DEFAULT)
+
 def bcover(img, cat):
-    return ('<div class="cover has-img"><img class="thumb" src="assets/img/%s.webp" alt="" loading="lazy">'
-            '<span class="cat">%s</span></div>' % (img, cat))
+    return ('<div class="cover has-img"><img class="thumb" src="assets/img/%s.webp" alt="" loading="lazy" style="object-position:%s">'
+            '<span class="cat">%s</span></div>' % (img, foco(img), cat))
 
 def article_jsonld(a, canonical, img):
     org = {"@type":["Organization","EducationalOrganization"],"@id":BASE+"/#org","name":"Encontrarás Tudo",
@@ -299,9 +326,9 @@ def render_artigo(a, fname=None):
               % (a.get("autor","Gustavo Souza"), a.get("data",""), a.get("data_br","")))
     body = ('<article class="article wrap"><div class="tags">%s</div><h1>%s</h1>'
             '<p class="dek">%s</p>%s<p class="art-meta">%s</p>'
-            '<img class="art-cover" src="%s" alt="" loading="eager">'
+            '<img class="art-cover" src="%s" alt="" loading="eager" style="object-position:%s">'
             '<div class="body">%s</div></article>'
-            % (tags, a["titulo"], a.get("dek",""), byline, meta_line, img, body_html))
+            % (tags, a["titulo"], a.get("dek",""), byline, meta_line, img, foco(a), body_html))
     jd = article_jsonld(a, canon, img)
     page(fname, _txt(a["titulo"]) + " — Encontrarás Tudo", _txt(a.get("dek","")), "blog", body, jd, og_image=img)
 
@@ -561,17 +588,18 @@ def _artdate(a):
 def home_card(a):
     img = "assets/img/%s.webp" % a.get("img", "eucaristia")
     cat = _cat_of(a)
+    fp = foco(a)
     if a.get("status") == "publicado":
         return ('<a class="post live reveal" href="%s.html">'
-                '<div class="cover has-img"><img class="thumb" src="%s" alt="" loading="lazy"><span class="cat">%s</span></div>'
+                '<div class="cover has-img"><img class="thumb" src="%s" alt="" loading="lazy" style="object-position:%s"><span class="cat">%s</span></div>'
                 '<div class="pbody"><h3>%s</h3><p class="ex">%s</p>'
                 '<div class="meta"><span class="d">%s</span><span>Ler &rarr;</span></div></div></a>'
-                % (a["slug"], img, cat, a["titulo"], a.get("resumo", ""), a.get("data_br", "")))
+                % (a["slug"], img, fp, cat, a["titulo"], a.get("resumo", ""), a.get("data_br", "")))
     return ('<div class="post reveal">'
-            '<div class="cover has-img"><img class="thumb" src="%s" alt="" loading="lazy"><span class="cat">%s</span></div>'
+            '<div class="cover has-img"><img class="thumb" src="%s" alt="" loading="lazy" style="object-position:%s"><span class="cat">%s</span></div>'
             '<div class="pbody"><h3>%s</h3><p class="ex">%s</p>'
             '<div class="meta"><span>Em prepara&ccedil;&atilde;o</span><span class="soon">Em breve</span></div></div></div>'
-            % (img, cat, a["titulo"], a.get("resumo", "")))
+            % (img, fp, cat, a["titulo"], a.get("resumo", "")))
 
 def pick_destaques():
     pub = sorted([a for a in ARTIGOS if a.get("status") == "publicado"], key=_artdate, reverse=True)
@@ -593,10 +621,10 @@ def hero_slides(dest):
     """Slides de artigo que entram na hero, alternando com a tela da marca."""
     return "".join(
         ('<a class="hslide hslide-art" href="%s.html">'
-         '<div class="ha-img" style="background-image:url(assets/img/%s.webp)"></div>'
+         '<div class="ha-img" style="background-image:url(assets/img/%s.webp);background-position:%s"></div>'
          '<div class="ha-tx"><span class="ha-cat">%s</span><h2>%s</h2>'
          '<p>%s</p><span class="ha-go">Ler o artigo &rarr;</span></div></a>')
-        % (a["slug"], a.get("img", "eucaristia"), _cat_of(a), a["titulo"], a.get("resumo", ""))
+        % (a["slug"], a.get("img", "eucaristia"), foco(a), _cat_of(a), a["titulo"], a.get("resumo", ""))
         for a in dest)
 
 def hero_dots(n):
