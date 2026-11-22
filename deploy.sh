@@ -24,4 +24,14 @@ if [ "$1" = "force" ] || [ "$before" != "$after" ] || [ ! -f "$WWW/index.html" ]
 if [ -f /opt/newsletter.env ]; then
   ( set -a; . /opt/newsletter.env; set +a
     python3 newsletter/dispatch.py ) >> /var/log/et-newsletter.log 2>&1 || true
+
+  # Relatório de métricas (entrega/abertura/clique) dos últimos 7 dias.
+  # Grava um JSON num caminho não-adivinhável servido pelo site; a tarefa
+  # semanal lê esse JSON e manda o resumo pro Gustavo. report.py só regenera
+  # se o arquivo tiver mais de 6h (não martela a API do Listmonk a cada tick).
+  ( set -a; . /opt/newsletter.env; set +a
+    python3 newsletter/report.py \
+      --out "$WWW/_stats/rel-5a5dd2846e1658b1a020e839.json" --days 7
+  ) >> /var/log/et-newsletter.log 2>&1 || true
+  [ -d "$WWW/_stats" ] && chmod -R a+rX "$WWW/_stats" 2>/dev/null || true
 fi
