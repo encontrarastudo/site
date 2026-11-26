@@ -4,3 +4,4 @@ admin.env
 *.bak.*
 newsletter/.sent.log
 newsletter/queue/*.tmp
+newsletter/.warmup_state

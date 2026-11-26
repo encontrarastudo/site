@@ -35,12 +35,16 @@ def register_template():
     tid = res.get("data", {}).get("id")
     print("Template criado (id %s)" % tid); return tid
 
-def send_article(subject, content_path, test_to=None):
+def send_article(subject, content_path, test_to=None, query=None):
     content = open(content_path, encoding="utf-8").read()
     tid = register_template()
     camp = {"name": "[Blog] " + subject, "subject": subject, "lists": [LIST_BLOG],
             "type": "regular", "content_type": "html", "template_id": tid,
             "body": content, "messenger": "email", "tags": ["blog"]}
+    # query = filtro SQL do Listmonk p/ enviar só a uma fatia da lista (aquecimento).
+    if query:
+        camp["query"] = query
+        print("Fatia (aquecimento): %s" % query)
     res = req("POST", "/api/campaigns", camp)
     cid = res.get("data", {}).get("id")
     print("Campanha criada (id %s)" % cid)
