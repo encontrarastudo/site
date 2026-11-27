@@ -9,6 +9,6 @@
     80,
     100
   ],
-  "nota": "ENVIOS PAUSADOS (pausar_envios=true) após disparo acidental para a lista inteira em 26/11. O filtro de fatia (query do Listmonk) não foi respeitado. Reabilitar só após corrigir e testar com contagem visível.",
-  "pausar_envios": true
+  "nota": "Envio normal para a lista inteira (lista pequena, bounce/reclamacoes em 0%). O fatiamento por query foi desligado porque o Listmonk ignorou o filtro.",
+  "pausar_envios": false
 }
