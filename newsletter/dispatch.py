@@ -70,8 +70,18 @@ def mark_sent(slug, assunto):
         f.write("%s\t%s\t%s\n" % (slug, datetime.datetime.now(datetime.timezone.utc)
                                   .isoformat(timespec="seconds"), assunto))
 
+def envios_pausados():
+    """Freio de emergência: se warmup.json tiver pausar_envios=true, NÃO envia nada."""
+    try:
+        return bool(json.load(open(WARMUP_CFG, encoding="utf-8")).get("pausar_envios"))
+    except Exception:
+        return False
+
 def main():
     dry = "--dry-run" in sys.argv
+    if envios_pausados() and not dry:
+        print("[dispatch] ENVIOS PAUSADOS (warmup.json pausar_envios=true) — nada enviado.")
+        return
     if not os.path.isdir(QUEUE):
         print("[dispatch] sem fila."); return
     sent = load_sent()
