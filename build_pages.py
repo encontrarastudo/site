@@ -329,6 +329,7 @@ def render_artigo(a, fname=None):
             '<img class="art-cover" src="%s" alt="" loading="eager" style="object-position:%s">'
             '<div class="body">%s</div></article>'
             % (tags, a["titulo"], a.get("dek",""), byline, meta_line, img, foco(a), body_html))
+    body = body + leia_tambem(a)
     jd = article_jsonld(a, canon, img)
     page(fname, _txt(a["titulo"]) + " — Encontrarás Tudo", _txt(a.get("dek","")), "blog", body, jd, og_image=img)
 
@@ -341,6 +342,30 @@ def blog_card(a):
     return ('<div class="post reveal">%s<div class="pbody"><h3>%s</h3><p class="ex">%s</p>'
             '<div class="meta"><span>Em prepara&ccedil;&atilde;o</span><span class="soon">Em breve</span></div></div></div>'
             % (cov, a["titulo"], a.get("resumo","")))
+
+def leia_tambem(a, n=3):
+    """Bloco 'Leia também' — artigos publicados relacionados (por tags/categoria,
+    depois recência). Reutiliza blog_card e as classes existentes (sem CSS novo)."""
+    slug = a.get("slug")
+    pub = [x for x in ARTIGOS if x.get("status") == "publicado" and x.get("slug") != slug]
+    if not pub:
+        return ""
+    atags = {_norm(t) for t in a.get("tags", [])}
+    acat = _norm(a.get("categoria", ""))
+    def _score(x):
+        s = 2 * len(atags & {_norm(t) for t in x.get("tags", [])})
+        if acat and _norm(x.get("categoria", "")) == acat:
+            s += 1
+        return s
+    ranked = sorted(pub, key=lambda x: (_score(x), x.get("data", "")), reverse=True)
+    rel = ranked[:n]
+    if not rel:
+        return ""
+    cards = "".join(blog_card(x) for x in rel)
+    return ('<section class="section light related"><div class="wrap">'
+            '<div class="section-head reveal"><div><p class="eyebrow">Continue lendo</p>'
+            '<h2>Leia tamb&eacute;m</h2></div></div>'
+            '<div class="grid">%s</div></div></section>' % cards)
 
 _pub = [a for a in ARTIGOS if a.get("status") == "publicado"]
 for _a in _pub:
